@@ -21,12 +21,12 @@ $boxedLayout = false; //Set if site requires boxed layout look, this will put ev
 $mastHeadInGrid = true; //Set if you want the header inside a grid that is centered.
 $navInGrid = true; //Set if you want the navigation inside a grid that is centered.
 $bodyInGrid = true; //Set if you want the loop body inside a grid that is centered.
-$footerInGrid = true; //Set if you want the footer inside a grid that is centered.
+$footerInGrid = false; //Set if you want the footer inside a grid that is centered.
 
 /* ------- N A V I G A T I O N ----------------*/
 
-$useKickstartNav = true; // This is the main fallback navigation styled with Kickstart UIKit
-$useUberMenu = false; // Set to 'true' if UberMenu Plugin is installed NOTE: Turn on "Easy Integration" in the ubermenu admin panel under "Theme Integration"
+$useKickstartNav = false; // This is the main fallback navigation styled with Kickstart UIKit
+$useUberMenu = true; // Set to 'true' if UberMenu Plugin is installed NOTE: Turn on "Easy Integration" in the ubermenu admin panel under "Theme Integration"
 
 //Max Grid Width
 $maxGridWidth = "960px"; //Max Width of the Grid.
@@ -43,6 +43,9 @@ $GridFlexPaddingBottom = "0em";
 $GridFlexPaddingLeft = "0em";
 $GridFlexPaddingRight = "0em";
 
+
+/*---------B R A N D I N G------------*/
+$mastheadBrandLogo = "'/ocgflex/wp-content/themes/ocgflex/assets/images/ocgflex-logo.png'";
 
 
 /* ------- C O L O R S ----------------*/

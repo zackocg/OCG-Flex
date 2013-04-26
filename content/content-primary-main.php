@@ -5,19 +5,22 @@
 		<h1><?php the_title(); ?></h1>
 	</div>
 
-	<div id="primarySidebar" class="col_3" style="background:purple;">
-		Left Sidebar
-	</div>
 	
-	<div id="main_content" class="col_9" style="background:aqua;">
+	
+	<div id="main_content" class="col_9" style="background:aqua;float:right;">
 		<div class="grid flex">
 			<?php the_content(); ?>
 		</div>
 		<h2>Comments</h2>
 		<?php comments_template( '', true ); ?>
 	</div>
+	
+	<div id="primarySidebar" class="col_3" style="background:purple;float:left;">
+		Left Sidebar
+	</div>
+	<div class="clearfix"></div>
 </div>
-<div class="clearfix"></div>
+
 <?php endwhile; // end of the loop. ?>
 		
 			

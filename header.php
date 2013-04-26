@@ -27,8 +27,8 @@ less.watch();
 
 <header>
 	<div class="<?php mastHeadInGrid(); ?>">
-		<div class="masthead-branding-logo col_5">Logo</div>
-		<div class="masthead-branding-logo col_7" style="background-color:black">
+		<div class="masthead-branding-logo col_5"><a href="/">Home Page</a></div>
+		<div class="col_7">
 			<?php
 				$sidebar = "masthead-widget-area";
 				dynamic_sidebar( $sidebar );

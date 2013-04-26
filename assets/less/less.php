@@ -15,7 +15,8 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   global $GridFlexPaddingBottom;
   global $GridFlexPaddingLeft;
   global $GridFlexPaddingRight;
-  
+  global $mastheadBrandLogo;
+  //echo $mastheadBrandLogo;
   if ( !class_exists( 'lessc' ) ) {
     require_once get_template_directory() . '/ocgflex-core/lesscompiler/lessc.inc.php';
   }
@@ -32,6 +33,7 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   "GridFlexPaddingBottom" => $GridFlexPaddingBottom,
   "GridFlexPaddingLeft" => $GridFlexPaddingLeft,
   "GridFlexPaddingRight" => $GridFlexPaddingRight,
+  "mastheadBrandLogo" => $mastheadBrandLogo,
   ));
   
   if ( $cssminify == true ) {
