@@ -1,9 +1,21 @@
 #primary-content-wrapper {
-	background: white;
+	background: @bodyContentContainerBackgroundColor;
 	padding: @bodyContentContainerPadding;
 	margin: @bodyContentContainerMargin;
-	-webkit-box-shadow:  2px 2px 10px 1px rgba(0, 0, 0, .3);
-     box-shadow:  2px 2px 10px 1px rgba(0, 0, 0, .3);
+	-webkit-box-shadow:  @boxedLayoutBoxShadow;
+     box-shadow:  @boxedLayoutBoxShadow;
+    -webkit-border-top-left-radius: @boxedLayout_RoundedCorners_topLeft;
+	-webkit-border-top-right-radius: @boxedLayout_RoundedCorners_topRight;
+	-webkit-border-bottom-right-radius: @boxedLayout_RoundedCorners_bottomRight;
+	-webkit-border-bottom-left-radius: @boxedLayout_RoundedCorners_bottomLeft;
+	-moz-border-radius-topleft: @boxedLayout_RoundedCorners_topLeft;
+	-moz-border-radius-topright: @boxedLayout_RoundedCorners_topRight;
+	-moz-border-radius-bottomright: @boxedLayout_RoundedCorners_bottomRight;
+	-moz-border-radius-bottomleft: @boxedLayout_RoundedCorners_bottomLeft;
+	border-top-left-radius: @boxedLayout_RoundedCorners_topLeft;
+	border-top-right-radius: @boxedLayout_RoundedCorners_topRight;
+	border-bottom-right-radius: @boxedLayout_RoundedCorners_bottomRight;
+	border-bottom-left-radius: @boxedLayout_RoundedCorners_bottomLeft;
 }
 .primary-content-wrapper {
 	

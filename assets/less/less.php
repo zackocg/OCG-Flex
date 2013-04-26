@@ -5,7 +5,11 @@
  */
 function ocgflex_phpless( $inputFile, $outputFile ) {
   global $cssminify;
-  global $bodyBackgroundColor;
+  global $boxedLayoutBoxShadow;
+  global $boxedLayout_RoundedCorners_topLeft; 
+  global $boxedLayout_RoundedCorners_topRight;
+  global $boxedLayout_RoundedCorners_bottomLeft;
+  global $boxedLayout_RoundedCorners_bottomRight;
   global $maxGridWidth;
   global $GridPadding;
   global $GridFlexPadding;
@@ -13,6 +17,8 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   global $bodyContentContainerMarginMobile;
   global $mastheadBrandLogo;
   global $bodyContentContainerPadding;
+  global $bodyBackgroundColor;
+  global $bodyContentContainerBackgroundColor;
   global $mastHeadBackgroundColor;
   global $footerBackgroundColor;
   
@@ -25,7 +31,11 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   $less = new lessc;
   
   $less->setVariables(array(
-  "bodyBackgroundColor" => $bodyBackgroundColor,
+  "boxedLayoutBoxShadow" => $boxedLayoutBoxShadow,
+  "boxedLayout_RoundedCorners_topLeft" => $boxedLayout_RoundedCorners_topLeft,
+  "boxedLayout_RoundedCorners_topRight" => $boxedLayout_RoundedCorners_topRight,
+  "boxedLayout_RoundedCorners_bottomLeft" => $boxedLayout_RoundedCorners_bottomLeft,
+  "boxedLayout_RoundedCorners_bottomRight" => $boxedLayout_RoundedCorners_bottomRight,
   "maxGridWidth" => $maxGridWidth,
   "GridPadding" => $GridPadding,
   "GridFlexPadding" => $GridFlexPadding,
@@ -33,6 +43,8 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   "bodyContentContainerMargin" => $bodyContentContainerMargin,
   "bodyContentContainerMarginMobile" => $bodyContentContainerMarginMobile,
   "mastheadBrandLogo" => $mastheadBrandLogo,
+  "bodyBackgroundColor" => $bodyBackgroundColor,
+  "bodyContentContainerBackgroundColor" => $bodyContentContainerBackgroundColor,
   "mastHeadBackgroundColor" => $mastHeadBackgroundColor,
   "footerBackgroundColor" => $footerBackgroundColor,
   ));

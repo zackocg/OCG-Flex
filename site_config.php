@@ -16,21 +16,30 @@ $dev = true; //Set to compile less files into master_style.css
 $cssminify = false; // Set to true is CSS should be minified during compile.
 /* ------------------------------------*/
 
-/* ------- L A Y O U T ----------------*/
-$boxedLayout = true; //Set if site requires boxed layout look, this will put everthing into a grid.
+/* ------- G R I D   W I D T H ----------------*/
+//Max Grid Width
+$maxGridWidth = "960px"; //Max Width of the Grid.
+
+/* ------- B O X E D   L A Y O U T ----------------*/
+
+//Set if site requires boxed layout look, this will put everthing into a grid.
+$boxedLayout = true;
+
+//Boxed Layout Shadow ( 2px 2px 10px 1px rgba(0, 0, 0, .3) )
+$boxedLayoutBoxShadow = "none";
+
+//Set Corner Radius for Boxed Layout Primary Container
+$boxedLayout_RoundedCorners_topLeft = "5px"; 
+$boxedLayout_RoundedCorners_topRight = "5px";
+$boxedLayout_RoundedCorners_bottomLeft = "5px";
+$boxedLayout_RoundedCorners_bottomRight = "5px";
+
+/* ------- G R I D   S E C T I O N S ----------------*/
+
 $mastHeadInGrid = true; //Set if you want the header inside a grid that is centered.
 $navInGrid = true; //Set if you want the navigation inside a grid that is centered.
 $bodyInGrid = true; //Set if you want the loop body inside a grid that is centered.
 $footerInGrid = true; //Set if you want the footer inside a grid that is centered.
-
-/* ------- N A V I G A T I O N ----------------*/
-
-$useKickstartNav = false; // This is the main fallback navigation styled with Kickstart UIKit
-$useUberMenu = true; // Set to 'true' if UberMenu Plugin is installed NOTE: Turn on "Easy Integration" in the ubermenu admin panel under "Theme Integration"
-
-/* ------- G R I D   W I D T H ----------------*/
-//Max Grid Width
-$maxGridWidth = "960px"; //Max Width of the Grid.
 
 
 /* ------- P A D D I N G ----------------*/
@@ -54,16 +63,14 @@ $bodyContentContainerMargin = "15px auto"; // (top, right, bottom, left) for cen
 //Set Body Content Container Margin for Mobile (Max Width 480px)
 $bodyContentContainerMarginMobile = "15px 15px";
 
-/*---------B R A N D I N G------------*/
 
-$mastheadBrandLogo = "/assets/images/ocgflex-logo.png";
 
 
 /* ------- C O L O R S ----------------*/
 
 //Body Background Color (Boxed Layout Visible)
 $bodyBackgroundColor = '#EFEFEF';
-
+$bodyContentContainerBackgroundColor = "white";
 $mastHeadBackgroundColor = "none"; //Masthead Background Color
 $mastHeadBackgroundImage = "none"; //Masthead Background Image
 
@@ -77,6 +84,20 @@ $H3_size = "";
 $H4_size = "";
 $H5_size = "";
 $H6_size = "";
+
+
+/*---------M A S T H E A D------------*/
+
+$mastheadBrandLogo = "/assets/images/ocgflex-logo.png";
+
+
+/* ------- N A V I G A T I O N ----------------*/
+
+$useKickstartNav = true; // This is the main fallback navigation styled with Kickstart UIKit
+$useUberMenu = false; // Set to 'true' if UberMenu Plugin is installed NOTE: Turn on "Easy Integration" in the ubermenu admin panel under "Theme Integration"
+
+
+
 
 
 /* ------- B A C K G R O U N D   I M A G E S ------------*/
