@@ -1,0 +1,47 @@
+#primary-content-wrapper {
+	background: white;
+	padding: @bodyContentContainerPadding;
+	margin: @bodyContentContainerMargin;
+}
+.primary-content-wrapper {
+	
+}
+
+//Left Side Bar Template
+#left_sidebar_content_section {
+	float: right;
+}
+
+#left_sidebar_aside {
+	float: left;
+}
+
+
+
+/*--------------------------------
+	R E S P O N S I V E
+----------------------------------*/
+
+@media only screen and (max-width : 768px) {
+
+//Left Side Bar Template
+#left_sidebar_content_section {
+	float: none;
+}
+
+#left_sidebar_aside {
+	float: none;
+}
+
+	
+}
+
+@media only screen and (max-width : 480px) {
+
+#primary-content-wrapper {
+	background: white;
+	padding: @bodyContentContainerPadding;
+	margin: @bodyContentContainerMarginMobile;
+}
+	
+}

@@ -655,13 +655,13 @@ input.error {
 .grid {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0em 0em 0em 0em;
+  padding: 10px;
 }
 .grid.flex {
   width: 100%;
   max-width: 100%;
   padding: 0 2%;
-  padding: 0em 0em 0em 0em;
+  padding: 0;
 }
 .row {
   display: block;
@@ -807,7 +807,7 @@ input.error {
     width: 100%;
   }
   .grid {
-    max-width: 480px;
+    max-width: 90%;
   }
   .show-desktop {
     display: none;

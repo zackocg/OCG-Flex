@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Right Sidebar (Primary)
+Template Name: Left Sidebar
 */
 
 
@@ -9,7 +9,7 @@ get_header();
 
 
 //Show Body Content
-get_template_part('content/content', 'main-primary');
+get_template_part('content/content', 'left-sidebar');
 
 
 //Show Footer

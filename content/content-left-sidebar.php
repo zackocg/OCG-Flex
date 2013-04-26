@@ -1,23 +1,18 @@
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="grid">
 	
-	<div id="page-title" class="col_12" style="background:blue;">
-		<h1><?php the_title(); ?></h1>
-	</div>
-
-	
-	
-	<div id="main_content" class="col_9" style="background:aqua;float:right;">
+	<section id="left_sidebar_content_section" class="col_9">
 		<div class="grid flex">
 			<?php the_content(); ?>
 		</div>
 		<h2>Comments</h2>
 		<?php comments_template( '', true ); ?>
-	</div>
+	</section>
 	
-	<div id="primarySidebar" class="col_3" style="background:purple;float:left;">
+	<aside id="left_sidebar_aside" class="col_3">
 		Left Sidebar
-	</div>
+	</aside>
+	
 	<div class="clearfix"></div>
 </div>
 

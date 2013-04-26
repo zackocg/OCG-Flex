@@ -11,11 +11,6 @@
 
 <?php wp_head(); ?>
 
-<?php
-//Compile Less if in Developer Mode
-//ocgflex_compile_less();
-?>
-
 <script type="text/javascript" charset="utf-8">
 less.env = "development";
 less.watch();
@@ -23,7 +18,7 @@ less.watch();
 
 </head>
 <body>
-<div id="primary-content-wrapper" class="<?php boxedLayout(); ?>">
+<div id="primary-content-wrapper" class="<?php boxedLayout(); ?> primary-content-wrapper">
 
 <header>
 	<div class="<?php mastHeadInGrid(); ?>">

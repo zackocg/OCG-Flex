@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Full Width Main
+Template Name: Right Sidebar
 */
 
 
@@ -9,7 +9,7 @@ get_header();
 
 
 //Show Body Content
-get_template_part('content/content', 'fullwidth-main');
+get_template_part('content/content', 'right-sidebar');
 
 
 //Show Footer

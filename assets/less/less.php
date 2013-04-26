@@ -7,16 +7,18 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   global $cssminify;
   global $bodyBackgroundColor;
   global $maxGridWidth;
-  global $GridPaddingTop;
-  global $GridPaddingBottom;
-  global $GridPaddingLeft;
-  global $GridPaddingRight;
-  global $GridFlexPaddingTop;
-  global $GridFlexPaddingBottom;
-  global $GridFlexPaddingLeft;
-  global $GridFlexPaddingRight;
+  global $GridPadding;
+  global $GridFlexPadding;
+  global $bodyContentContainerMargin;
+  global $bodyContentContainerMarginMobile;
   global $mastheadBrandLogo;
-  //echo $mastheadBrandLogo;
+  global $bodyContentContainerPadding;
+  global $mastHeadBackgroundColor;
+  global $footerBackgroundColor;
+  
+  //Render Image URLs Correctly
+  $mastheadBrandLogo = "'" . get_stylesheet_directory_uri() . $mastheadBrandLogo . "'";
+  
   if ( !class_exists( 'lessc' ) ) {
     require_once get_template_directory() . '/ocgflex-core/lesscompiler/lessc.inc.php';
   }
@@ -25,15 +27,14 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   $less->setVariables(array(
   "bodyBackgroundColor" => $bodyBackgroundColor,
   "maxGridWidth" => $maxGridWidth,
-  "GridPaddingTop" => $GridPaddingTop,
-  "GridPaddingBottom" => $GridPaddingBottom,
-  "GridPaddingLeft" => $GridPaddingLeft,
-  "GridPaddingRight" => $GridPaddingRight,
-  "GridFlexPaddingTop" => $GridFlexPaddingTop,
-  "GridFlexPaddingBottom" => $GridFlexPaddingBottom,
-  "GridFlexPaddingLeft" => $GridFlexPaddingLeft,
-  "GridFlexPaddingRight" => $GridFlexPaddingRight,
+  "GridPadding" => $GridPadding,
+  "GridFlexPadding" => $GridFlexPadding,
+  "bodyContentContainerPadding" => $bodyContentContainerPadding,
+  "bodyContentContainerMargin" => $bodyContentContainerMargin,
+  "bodyContentContainerMarginMobile" => $bodyContentContainerMarginMobile,
   "mastheadBrandLogo" => $mastheadBrandLogo,
+  "mastHeadBackgroundColor" => $mastHeadBackgroundColor,
+  "footerBackgroundColor" => $footerBackgroundColor,
   ));
   
   if ( $cssminify == true ) {
