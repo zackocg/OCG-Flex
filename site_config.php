@@ -17,16 +17,16 @@ $cssminify = false; // Set to true is CSS should be minified during compile.
 /* ------------------------------------*/
 
 /* ------- L A Y O U T ----------------*/
-$boxedLayout = false; //Set if site requires boxed layout look, this will put everthing into a grid.
+$boxedLayout = true; //Set if site requires boxed layout look, this will put everthing into a grid.
 $mastHeadInGrid = true; //Set if you want the header inside a grid that is centered.
-$navInGrid = false; //Set if you want the navigation inside a grid that is centered.
+$navInGrid = true; //Set if you want the navigation inside a grid that is centered.
 $bodyInGrid = true; //Set if you want the loop body inside a grid that is centered.
 $footerInGrid = true; //Set if you want the footer inside a grid that is centered.
 
 /* ------- N A V I G A T I O N ----------------*/
 
-$useKickstartNav = true; // This is the main fallback navigation styled with Kickstart UIKit
-$useUberMenu = false; // Set to 'true' if UberMenu Plugin is installed NOTE: Turn on "Easy Integration" in the ubermenu admin panel under "Theme Integration"
+$useKickstartNav = false; // This is the main fallback navigation styled with Kickstart UIKit
+$useUberMenu = true; // Set to 'true' if UberMenu Plugin is installed NOTE: Turn on "Easy Integration" in the ubermenu admin panel under "Theme Integration"
 
 /* ------- G R I D   W I D T H ----------------*/
 //Max Grid Width
@@ -36,10 +36,10 @@ $maxGridWidth = "960px"; //Max Width of the Grid.
 /* ------- P A D D I N G ----------------*/
 
 //Inner Padding of Main Container
-$bodyContentContainerPadding = "0px";
+$bodyContentContainerPadding = "10px";
 
 //Grid Padding
-$GridPadding = "10px";
+$GridPadding = "0px";
 
 //Grid-Flex Padding
 $GridFlexPadding = "0";
@@ -49,10 +49,10 @@ $GridFlexPadding = "0";
 /* ------- M A R G I N S ----------------*/
 
 //Set Body Content Container Margin
-$bodyContentContainerMargin = "0 auto"; // (top, right, bottom, left) for center page (0 auto)
+$bodyContentContainerMargin = "15px auto"; // (top, right, bottom, left) for center page (0 auto)
 
 //Set Body Content Container Margin for Mobile (Max Width 480px)
-$bodyContentContainerMarginMobile = "0";
+$bodyContentContainerMarginMobile = "15px 15px";
 
 /*---------B R A N D I N G------------*/
 
@@ -62,12 +62,12 @@ $mastheadBrandLogo = "/assets/images/ocgflex-logo.png";
 /* ------- C O L O R S ----------------*/
 
 //Body Background Color (Boxed Layout Visible)
-$bodyBackgroundColor = '#666666';
+$bodyBackgroundColor = '#EFEFEF';
 
-$mastHeadBackgroundColor = "blue"; //Masthead Background Color
+$mastHeadBackgroundColor = "none"; //Masthead Background Color
 $mastHeadBackgroundImage = "none"; //Masthead Background Image
 
-$footerBackgroundColor = "blue"; //Masthead Background Color
+$footerBackgroundColor = "none"; //Masthead Background Color
 
 
 /* ------- T Y P O G R A P H Y ----------------*/

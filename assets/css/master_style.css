@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 body {
-  background: #666666;
+  background: #EFEFEF;
   margin: 0;
   padding: 0;
 }
@@ -16,7 +16,7 @@ h1 {
   padding: 0;
 }
 header {
-  background-color: blue;
+  background-color: none;
 }
 .masthead-branding-logo {
   background-image: url('http://zack.dev/ocgflex/wp-content/themes/ocgflex/assets/images/ocgflex-logo.png');
@@ -32,8 +32,10 @@ header {
 }
 #primary-content-wrapper {
   background: white;
-  padding: 0px;
-  margin: 0 auto;
+  padding: 10px;
+  margin: 15px auto;
+  -webkit-box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.3);
 }
 #left_sidebar_content_section {
   float: right;
@@ -52,11 +54,11 @@ header {
 @media only screen and (max-width: 480px) {
   #primary-content-wrapper {
     background: white;
-    padding: 0px;
-    margin: 0;
+    padding: 10px;
+    margin: 15px 15px;
   }
 }
 footer {
-  background-color: blue;
+  background-color: none;
   background-image: url();
 }

@@ -1,11 +1,7 @@
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="grid">
-	
-	<div id="page-title" class="col_12" style="background:blue;">
-		<h1><?php the_title(); ?></h1>
-	</div>
 
-	<div id="main_content" class="col_9" style="background:aqua;">
+	<div id="main_content" class="col_9">
 		<div class="grid flex">
 			<?php the_content(); ?>
 		</div>
@@ -13,7 +9,7 @@
 		<?php comments_template( '', true ); ?>
 	</div>
 	
-	<div id="primarySidebar" class="col_3" style="background:purple;">
+	<div id="primarySidebar" class="col_3">
 		Right Sidebar
 	</div>
 </div>
