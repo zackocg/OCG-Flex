@@ -5,12 +5,19 @@
  */
 function ocgflex_phpless( $inputFile, $outputFile ) {
   global $cssminify;
+  
+  //Grid Widths
+  global $maxGridWidth;
+  global $maxGridWidth1280;
+  global $maxGridWidth1024;
+  global $maxGridWidth768;
+  global $maxGridWidth480;
   global $boxedLayoutBoxShadow;
   global $boxedLayout_RoundedCorners_topLeft; 
   global $boxedLayout_RoundedCorners_topRight;
   global $boxedLayout_RoundedCorners_bottomLeft;
   global $boxedLayout_RoundedCorners_bottomRight;
-  global $maxGridWidth;
+ 
   global $GridPadding;
   global $GridFlexPadding;
   global $bodyContentContainerMargin;
@@ -19,11 +26,11 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   global $bodyContentContainerPadding;
   global $bodyBackgroundColor;
   global $bodyContentContainerBackgroundColor;
-  global $mastHeadBackgroundColor;
+  global $mastHeadBackground;
   global $footerBackgroundColor;
   
   //Render Image URLs Correctly
-  $mastheadBrandLogo = "'" . get_stylesheet_directory_uri() . $mastheadBrandLogo . "'";
+  $mastheadBrandLogo = "'" . get_stylesheet_directory_uri() . "/assets/images/" . $mastheadBrandLogo . "'";
   
   if ( !class_exists( 'lessc' ) ) {
     require_once get_template_directory() . '/ocgflex-core/lesscompiler/lessc.inc.php';
@@ -31,12 +38,17 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   $less = new lessc;
   
   $less->setVariables(array(
+  "maxGridWidth" => $maxGridWidth,
+  "maxGridWidth1280" => $maxGridWidth1280,
+  "maxGridWidth1024" => $maxGridWidth1024,
+  "maxGridWidth768" => $maxGridWidth768,
+  "maxGridWidth480" => $maxGridWidth480,
   "boxedLayoutBoxShadow" => $boxedLayoutBoxShadow,
   "boxedLayout_RoundedCorners_topLeft" => $boxedLayout_RoundedCorners_topLeft,
   "boxedLayout_RoundedCorners_topRight" => $boxedLayout_RoundedCorners_topRight,
   "boxedLayout_RoundedCorners_bottomLeft" => $boxedLayout_RoundedCorners_bottomLeft,
   "boxedLayout_RoundedCorners_bottomRight" => $boxedLayout_RoundedCorners_bottomRight,
-  "maxGridWidth" => $maxGridWidth,
+  
   "GridPadding" => $GridPadding,
   "GridFlexPadding" => $GridFlexPadding,
   "bodyContentContainerPadding" => $bodyContentContainerPadding,
@@ -45,7 +57,7 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   "mastheadBrandLogo" => $mastheadBrandLogo,
   "bodyBackgroundColor" => $bodyBackgroundColor,
   "bodyContentContainerBackgroundColor" => $bodyContentContainerBackgroundColor,
-  "mastHeadBackgroundColor" => $mastHeadBackgroundColor,
+  "mastHeadBackground" => $mastHeadBackground,
   "footerBackgroundColor" => $footerBackgroundColor,
   ));
   

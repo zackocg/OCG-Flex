@@ -19,7 +19,7 @@ less.watch();
 
 <header>
 	<div class="<?php mastHeadInGrid(); ?>">
-		<div class="masthead-branding-logo col_5"><a href="/">Home Page</a></div>
+		<div class="masthead-branding-logo col_5"><a href="<?php echo site_url(); ?>">Home Page</a></div>
 		<div class="col_7">
 			<?php
 				$sidebar = "masthead-widget-area";
