@@ -13,7 +13,7 @@ set $dev to "true", to turn on developer mode.
 	D E V E L O P M E N T    M O D E   (LESS)
 ---------------------------------------*/
 $dev = true; //Set to compile less files into master_style.css
-$cssminify = false; // Set to true is CSS should be minified during compile.
+$cssminify = true; // Set to true is CSS should be minified during compile.
 /* ------------------------------------*/
 
 /* ------- G R I D   W I D T H ----------------*/
@@ -54,17 +54,18 @@ $navInGrid = false; //Set if you want the navigation inside a grid that is cente
 $bodyInGrid = true; //Set if you want the loop body inside a grid that is centered.
 $footerInGrid = true; //Set if you want the footer inside a grid that is centered.
 
+//Grid Padding Global Setting
+$GridPadding = "0px";
 
-/* ------- P A D D I N G ----------------*/
+//Grid-Flex Padding Global Setting
+$GridFlexPadding = "0";
+
+/* ------- P R I M A R Y   C O N T A I N E R ----------------*/
 
 //Inner Padding of Main Container
 $bodyContentContainerPadding = "20px";
 
-//Grid Padding
-$GridPadding = "0px";
 
-//Grid-Flex Padding
-$GridFlexPadding = "0";
 
 
 
@@ -101,7 +102,7 @@ $H6_size = "";
 /*---------M A S T H E A D------------*/
 
 //Company Logo
-$mastheadBrandLogo = "ocgflex-logo.png";
+$mastheadBrandLogo = "ocg_flex_logo.png";
 
 
 /* ------- N A V I G A T I O N ----------------*/
@@ -120,84 +121,9 @@ $useUberMenu = true; // Set to 'true' if UberMenu Plugin is installed NOTE: Turn
 /* ------- L A Y O U T   S E T T I N G S ----------------*/
 
 
-require_once locate_template( '/assets/less/less.php' );
+require_once get_stylesheet_directory() . '/assets/less/less.php' ;
 
-function boxedLayout() {
-global $boxedLayout;
-
-if ($boxedLayout == true) {
-	echo "grid";
-} elseif ($boxedLayout == false) {
-	echo "grid flex";
-}
-
-}
-
-function mastHeadInGrid() {
-	global $mastHeadInGrid;
-	
-	if ($mastHeadInGrid == true) {
-		echo "grid";
-	} elseif ($mastHeadInGrid == false) {
-		echo "grid flex";
-	}
-	
-}
-
-function navInGrid() {
-	global $navInGrid;
-	
-	if ($navInGrid == true) {
-		return "grid";
-	} elseif ($navInGrid == false) {
-		return "grid flex";
-	}
-	
-}
-
-function bodyInGrid() {
-	global $bodyInGrid;
-	
-	if ($bodyInGrid == true) {
-		echo "grid";
-	} elseif ($bodyInGrid == false) {
-		echo "grid flex";
-	}
-	
-}
-
-function footerInGrid() {
-	global $footerInGrid;
-	
-	if ($footerInGrid == true) {
-		echo "grid";
-	} elseif ($footerInGrid == false) {
-		echo "grid flex";
-	}
-	
-}
-
-function useKickstartNav() {
-	global $useKickstartNav;
-	if ($useKickstartNav == true) {
-		echo '<nav class="'.navInGrid().'">';
-	    wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'my_extra_menu_class' ) );
-	    echo '</nav><div class="clearfix"></div>';
-	} elseif ($useKickstartNav == false) {
-		
-	}
-}
-
-function useUberMenu() {
-	global $useUberMenu;
-	if ($useUberMenu == true) {
-		echo '<nav class="'.navInGrid().'">';
-	       uberMenu_easyIntegrate();
-	    echo '</nav><div class="clearfix"></div>';
-	} elseif ($useUberMenu == false) {
-		
-	}
-}
+require_once get_template_directory() . '/ocgflex-core/functions/site_config_functions.php' ;
 
 
 

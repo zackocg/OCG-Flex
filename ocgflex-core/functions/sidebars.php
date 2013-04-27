@@ -6,9 +6,9 @@ $args_primary = array(
 	'description'   => '',
 	'class'         => '',
 	'before_widget' => '<li id="%1$s" class="widget %2$s">',
-	'after_widget'  => "</li>n",
+	'after_widget'  => "</li>",
 	'before_title'  => '<h2 class="widgettitle">',
-	'after_title'   => "</h2>n",
+	'after_title'   => "</h2>",
 );
 
 $args_secondary = array(
@@ -17,9 +17,9 @@ $args_secondary = array(
 	'description'   => '',
 	'class'         => '',
 	'before_widget' => '<li id="%1$s" class="widget %2$s">',
-	'after_widget'  => "</li>n",
+	'after_widget'  => "</li>",
 	'before_title'  => '<h2 class="widgettitle">',
-	'after_title'   => "</h2>n",
+	'after_title'   => "</h2>",
 );
 
 //Register Primary Sidebar

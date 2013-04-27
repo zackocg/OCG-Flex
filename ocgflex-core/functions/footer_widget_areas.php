@@ -8,7 +8,7 @@ $args_footer_area_left = array(
 	'before_widget' => '',
 	'after_widget'  => '',
 	'before_title'  => '<h2 class="widgettitle">',
-	'after_title'   => "</h2>n",
+	'after_title'   => "</h2>",
 );
 
 $args_footer_area_center = array(
@@ -19,7 +19,7 @@ $args_footer_area_center = array(
 	'before_widget' => '',
 	'after_widget'  => '',
 	'before_title'  => '<h2 class="widgettitle">',
-	'after_title'   => "</h2>n",
+	'after_title'   => "</h2>",
 );
 
 $args_footer_area_right = array(
@@ -30,7 +30,7 @@ $args_footer_area_right = array(
 	'before_widget' => '',
 	'after_widget'  => '',
 	'before_title'  => '<h2 class="widgettitle">',
-	'after_title'   => "</h2>n",
+	'after_title'   => "</h2>",
 );
 
 //Register Footer Widget Area Left

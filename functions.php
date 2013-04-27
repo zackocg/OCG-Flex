@@ -8,7 +8,7 @@ Core Functions for OCG Flex
 	G E T   F U N C T I O N   F I L E S
 -----------------------------------------*/
 require_once locate_template( '/ocgflex-core/admin/admin-functions.php' );
-require_once locate_template( '/site_config.php' );
+require_once get_stylesheet_directory() . '/site_config.php';
 require_once locate_template( '/ocgflex-core/functions/navigation_menus.php' );
 require_once locate_template( '/ocgflex-core/functions/post_loop.php' );
 require_once locate_template( '/ocgflex-core/functions/enqueue_scripts.php' );
