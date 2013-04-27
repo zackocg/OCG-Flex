@@ -9,12 +9,12 @@ set $dev to "true", to turn on developer mode.
 */
 
 
-/* ------------------------------------
-	D E V E L O P M E N T    M O D E   (LESS)
----------------------------------------*/
+/* -----D E V E L O P M E N T    M O D E   (LESS)---------*/
 $dev = true; //Set to compile less files into master_style.css
 $cssminify = true; // Set to true is CSS should be minified during compile.
-/* ------------------------------------*/
+
+
+
 
 /* ------- G R I D   W I D T H ----------------*/
 
@@ -33,6 +33,16 @@ $maxGridWidth768 = "90%";
 //RESPONSIVE - Max Grid Width > 480px
 $maxGridWidth480 = "100%";
 
+
+
+
+/* --------B O D Y   S E T T I N G S --------------*/
+
+$bodyBackground = '#ffffff url(\'../images/background_textures/grey_wash_wall.png\') fixed';
+
+
+
+
 /* ------- B O X E D   L A Y O U T ----------------*/
 
 //Set if site requires boxed layout look, this will put everthing into a grid.
@@ -47,6 +57,10 @@ $boxedLayout_RoundedCorners_topRight = "10px";
 $boxedLayout_RoundedCorners_bottomLeft = "10px";
 $boxedLayout_RoundedCorners_bottomRight = "10px";
 
+
+
+
+
 /* ------- G R I D   S E C T I O N S ----------------*/
 
 $mastHeadInGrid = true; //Set if you want the header inside a grid that is centered.
@@ -60,7 +74,14 @@ $GridPadding = "0px";
 //Grid-Flex Padding Global Setting
 $GridFlexPadding = "0";
 
+
+
+
+
 /* ------- P R I M A R Y   C O N T A I N E R ----------------*/
+
+// Primary Container Background
+$primaryContentContainerBackground = '#ffffff url(\'../images/background_textures/fabric_of_squares_gray.png\')';
 
 //Inner Padding of Main Container
 $bodyContentContainerPadding = "20px";
@@ -80,17 +101,12 @@ $bodyContentContainerMarginMobile = "15px 15px";
 
 
 
-/* ------- C O L O R S ----------------*/
-
-//Body Background Color (Boxed Layout Visible)
-$bodyBackgroundColor = '#EFEFEF';
-$bodyContentContainerBackgroundColor = "white";
-$mastHeadBackground = "none"; //Masthead Background
-
-$footerBackgroundColor = "none"; //Masthead Background Color
-
-
 /* ------- T Y P O G R A P H Y ----------------*/
+
+$googleWebFonts = "";
+
+$webFonts = "";
+
 $H1_size = "";
 $H2_size = "";
 $H3_size = "";
@@ -99,10 +115,29 @@ $H5_size = "";
 $H6_size = "";
 
 
+
+
 /*---------M A S T H E A D------------*/
+
+//Choose MastHead Layout
+/*
+1 - Logo Align Left With Widget Area Right
+2 - Centered Logo, No Widget Area
+3 - Logo Align Right With Widget Area Left
+4 - 
+5 - 
+6 - 
+*/
+$mastHeadLayout = "";
 
 //Company Logo
 $mastheadBrandLogo = "ocg_flex_logo.png";
+
+//Masthead Background ( background:#ffffff url('img_tree.png') no-repeat right top; )
+$mastHeadBackground = "none"; 
+
+
+
 
 
 /* ------- N A V I G A T I O N ----------------*/
@@ -114,9 +149,12 @@ $useUberMenu = true; // Set to 'true' if UberMenu Plugin is installed NOTE: Turn
 
 
 
-/* ------- B A C K G R O U N D   I M A G E S ------------*/
+/* ------- C O N T E N T ------------*/
 
 
+
+/* ------- F O O T E R ------------*/
+$footerBackgroundColor = "none"; //Masthead Background Color
 
 /* ------- L A Y O U T   S E T T I N G S ----------------*/
 

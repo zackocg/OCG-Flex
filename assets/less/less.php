@@ -12,20 +12,31 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   global $maxGridWidth1024;
   global $maxGridWidth768;
   global $maxGridWidth480;
+  
+  //Body Settings
+  global $bodyBackground;
+  
+  //Boxed Layout
   global $boxedLayoutBoxShadow;
   global $boxedLayout_RoundedCorners_topLeft; 
   global $boxedLayout_RoundedCorners_topRight;
   global $boxedLayout_RoundedCorners_bottomLeft;
   global $boxedLayout_RoundedCorners_bottomRight;
- 
+  
+  //Grid Padding - Global
   global $GridPadding;
   global $GridFlexPadding;
+  
+  //Primary Content Container
   global $bodyContentContainerMargin;
   global $bodyContentContainerMarginMobile;
-  global $mastheadBrandLogo;
   global $bodyContentContainerPadding;
-  global $bodyBackgroundColor;
-  global $bodyContentContainerBackgroundColor;
+  
+  
+  //Masthead
+  global $mastheadBrandLogo;
+  
+  global $primaryContentContainerBackground;
   global $mastHeadBackground;
   global $footerBackgroundColor;
   
@@ -55,8 +66,8 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   "bodyContentContainerMargin" => $bodyContentContainerMargin,
   "bodyContentContainerMarginMobile" => $bodyContentContainerMarginMobile,
   "mastheadBrandLogo" => $mastheadBrandLogo,
-  "bodyBackgroundColor" => $bodyBackgroundColor,
-  "bodyContentContainerBackgroundColor" => $bodyContentContainerBackgroundColor,
+  "bodyBackground" => $bodyBackground,
+  "primaryContentContainerBackground" => $primaryContentContainerBackground,
   "mastHeadBackground" => $mastHeadBackground,
   "footerBackgroundColor" => $footerBackgroundColor,
   ));

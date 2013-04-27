@@ -1,5 +1,6 @@
 <?php
 
+require_once 'masthead.php';
 
 function boxedLayout() {
 global $boxedLayout;

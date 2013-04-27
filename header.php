@@ -15,7 +15,8 @@ less.watch();
 
 </head>
 <body>
-<div id="primary-content-wrapper" class="<?php boxedLayout(); ?> primary-content-wrapper">
+<div id="primary-content-border" class="<?php boxedLayout(); ?>">
+<div id="primary-content-wrapper" class="<?php boxedLayout(); ?>">
 
 <header>
 	<div class="<?php mastHeadInGrid(); ?>">
