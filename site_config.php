@@ -46,16 +46,16 @@ $bodyBackground = '#ffffff url(\'../images/background_textures/grey_wash_wall.pn
 /* ------- B O X E D   L A Y O U T ----------------*/
 
 //Set if site requires boxed layout look, this will put everthing into a grid.
-$boxedLayout = true;
+$boxedLayout = false;
 
 //Boxed Layout Shadow ( 2px 2px 10px 1px rgba(0, 0, 0, .3) )
 $boxedLayoutBoxShadow = "2px 2px 10px 1px rgba(0, 0, 0, .3)";
 
 //Set Corner Radius for Boxed Layout Primary Container
-$boxedLayout_RoundedCorners_topLeft = "10px"; 
-$boxedLayout_RoundedCorners_topRight = "10px";
-$boxedLayout_RoundedCorners_bottomLeft = "10px";
-$boxedLayout_RoundedCorners_bottomRight = "10px";
+$boxedLayout_RoundedCorners_topLeft = "0"; 
+$boxedLayout_RoundedCorners_topRight = "0";
+$boxedLayout_RoundedCorners_bottomLeft = "0";
+$boxedLayout_RoundedCorners_bottomRight = "0";
 
 
 
@@ -67,6 +67,9 @@ $mastHeadInGrid = true; //Set if you want the header inside a grid that is cente
 $navInGrid = false; //Set if you want the navigation inside a grid that is centered.
 $bodyInGrid = true; //Set if you want the loop body inside a grid that is centered.
 $footerInGrid = true; //Set if you want the footer inside a grid that is centered.
+
+
+/* ------- G R I D   S E T T I N G S ----------------*/
 
 //Grid Padding Global Setting
 $GridPadding = "0px";
@@ -80,23 +83,22 @@ $GridFlexPadding = "0";
 
 /* ------- P R I M A R Y   C O N T A I N E R ----------------*/
 
-// Primary Container Background
-$primaryContentContainerBackground = '#ffffff url(\'../images/background_textures/fabric_of_squares_gray.png\')';
+// Primary Container Background ( #ffffff url(\'../images/background_textures/retina_wood.png\') )
+$primaryContainerBackground = '#CCCCCC';
 
 //Inner Padding of Main Container
-$bodyContentContainerPadding = "20px";
-
-
-
-
-
-/* ------- M A R G I N S ----------------*/
+$primaryContainerPadding = "0px";
 
 //Set Body Content Container Margin
-$bodyContentContainerMargin = "20px auto"; // (top, right, bottom, left) for center page (0 auto)
+$primaryContainerMargin = "0px auto"; // (top, right, bottom, left) for center page (0 auto)
 
 //Set Body Content Container Margin for Mobile (Max Width 480px)
-$bodyContentContainerMarginMobile = "15px 15px";
+$primaryContainerMarginMobile = "0 0";
+
+
+/* ------- C O N T E N T   C O N T A I N E R ----------------*/
+
+$contentContainerBackground = 'blue';
 
 
 
@@ -121,19 +123,24 @@ $H6_size = "";
 
 //Choose MastHead Layout
 /*
-1 - Logo Align Left With Widget Area Right
-2 - Centered Logo, No Widget Area
-3 - Logo Align Right With Widget Area Left
-4 - 
-5 - 
-6 - 
+0 - Custom Header ( /content/sections/custom_masthead.php )
+1 - Logo Left (col_3), Widget Area Right (col_9) Max Logo Size = 00px X 00px
+2 - Logo Left (col_4), Widget Area Right (col_8) Max Logo Size = 00px X 00px
+3 - Logo Left (col_5), Widget Area Right (col_7) Max Logo Size = 00px X 00px
+4 - Logo Left (col_6), Widget Area Right (col_6) Max Logo Size = 00px X 00px
+5 - Logo Left (col_7), Widget Area Right (col_5) Max Logo Size = 00px X 00px
+6 - Logo Left (col_8), Widget Area Right (col_4) Max Logo Size = 00px X 00px
+7 - Logo Left (col_9), Widget Area Right (col_3) Max Logo Size = 00px X 00px
 */
-$mastHeadLayout = "";
+$mastHeadLayout = "3";
+
+//Show Logo
+$showMastHeadBrandLogo = true; //true or false
 
 //Company Logo
-$mastheadBrandLogo = "ocg_flex_logo.png";
+$mastHeadBrandLogo = "ocg_flex_logo.png";
 
-//Masthead Background ( background:#ffffff url('img_tree.png') no-repeat right top; )
+//Masthead Background ( #ffffff url('img_tree.png') no-repeat right top; )
 $mastHeadBackground = "none"; 
 
 
@@ -154,7 +161,7 @@ $useUberMenu = true; // Set to 'true' if UberMenu Plugin is installed NOTE: Turn
 
 
 /* ------- F O O T E R ------------*/
-$footerBackgroundColor = "none"; //Masthead Background Color
+$footerBackgroundColor = "rgba(0,0,0,.2)"; //Masthead Background Color
 
 /* ------- L A Y O U T   S E T T I N G S ----------------*/
 

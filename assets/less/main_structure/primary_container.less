@@ -1,7 +1,7 @@
 #primary-content-border {
-	padding: 0 5px;
+	padding: 0;
 	background: white;
-	margin: @bodyContentContainerMargin;
+	margin: @primaryContainerMargin;
 	-webkit-box-shadow:  @boxedLayoutBoxShadow;
      box-shadow:  @boxedLayoutBoxShadow;
     -webkit-border-top-left-radius: @boxedLayout_RoundedCorners_topLeft;
@@ -19,8 +19,8 @@
 }
 
 #primary-content-wrapper {
-	background: @primaryContentContainerBackground;
-	padding: @bodyContentContainerPadding;
+	background: @primaryContainerBackground;
+	padding: @primaryContainerPadding;
 	-webkit-box-shadow:  @1boxedLayoutBoxShadow;
      box-shadow:  @1boxedLayoutBoxShadow;
     -webkit-border-top-left-radius: @boxedLayout_RoundedCorners_topLeft;
@@ -72,7 +72,6 @@
 @media only screen and (max-width : 480px) {
 
 #primary-content-wrapper {
-	background: white;
 	padding: @bodyContentContainerPadding;
 	margin: @bodyContentContainerMarginMobile;
 }

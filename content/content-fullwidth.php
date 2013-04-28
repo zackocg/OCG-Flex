@@ -1,14 +1,23 @@
 <?php while ( have_posts() ) : the_post(); ?>
-<div class="<?php bodyInGrid(); ?>">
-
-	<div id="main_content" class="col_12">
-		<div class="grid flex">
-			<?php the_content(); ?>
+<section id="contentContainerBorder" class="<?php bodyInGrid(); ?>">
+	<div id="contentContainerBackground">
+	
+		<?php
+		
+		
+		
+		?>
+	
+		<div id="main_content" class="col_12">
+			<div class="grid flex">
+				<?php the_content(); ?>
+			</div>
+			<h2>Comments</h2>
+			<?php comments_template( '', true ); ?>
 		</div>
-		<h2>Comments</h2>
-		<?php comments_template( '', true ); ?>
+		<div class="clearfix"></div>
 	</div>
-</div>
+</section>
 <div class="clearfix"></div>
 <?php endwhile; // end of the loop. ?>
 		

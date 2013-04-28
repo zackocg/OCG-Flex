@@ -27,21 +27,24 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   global $GridPadding;
   global $GridFlexPadding;
   
-  //Primary Content Container
-  global $bodyContentContainerMargin;
-  global $bodyContentContainerMarginMobile;
-  global $bodyContentContainerPadding;
+  //Primary Container
+  global $primaryContainerBackground;
+  global $primaryContainerMargin;
+  global $primaryContainerMarginMobile;
+  global $primaryContainerPadding;
   
+  //Content Container
+  global $contentContainerBackground;
   
   //Masthead
-  global $mastheadBrandLogo;
+  global $mastHeadBrandLogo;
   
-  global $primaryContentContainerBackground;
+  
   global $mastHeadBackground;
   global $footerBackgroundColor;
   
   //Render Image URLs Correctly
-  $mastheadBrandLogo = "'" . get_stylesheet_directory_uri() . "/assets/images/" . $mastheadBrandLogo . "'";
+  $mastHeadBrandLogo = "'" . get_stylesheet_directory_uri() . "/assets/images/" . $mastHeadBrandLogo . "'";
   
   if ( !class_exists( 'lessc' ) ) {
     require_once get_template_directory() . '/ocgflex-core/lesscompiler/lessc.inc.php';
@@ -62,12 +65,18 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   
   "GridPadding" => $GridPadding,
   "GridFlexPadding" => $GridFlexPadding,
-  "bodyContentContainerPadding" => $bodyContentContainerPadding,
-  "bodyContentContainerMargin" => $bodyContentContainerMargin,
-  "bodyContentContainerMarginMobile" => $bodyContentContainerMarginMobile,
-  "mastheadBrandLogo" => $mastheadBrandLogo,
+  
+  "primaryContainerBackground" => $primaryContainerBackground,
+  "primaryContainerPadding" => $primaryContainerPadding,
+  "primaryContainerMargin" => $primaryContainerMargin,
+  "primaryContainerMarginMobile" => $primaryContainerMarginMobile,
+  
+  //Content Container
+  "contentContainerBackground" => $contentContainerBackground,
+  
+  "mastHeadBrandLogo" => $mastHeadBrandLogo,
   "bodyBackground" => $bodyBackground,
-  "primaryContentContainerBackground" => $primaryContentContainerBackground,
+  
   "mastHeadBackground" => $mastHeadBackground,
   "footerBackgroundColor" => $footerBackgroundColor,
   ));

@@ -1,16 +1,35 @@
 header {
 	background: @mastHeadBackground;
+	padding: 40px 0;
 }
 
 .masthead-branding-logo {
-	background-image: url(@mastheadBrandLogo);
+	background-image: url(@mastHeadBrandLogo);
+	background-position: center;
 	background-size:222px 135px;
 	background-repeat:no-repeat;
 	height: 135px;
-	width: 222px;
+/* 	background: aqua; */
 }
 
 .masthead-branding-logo a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-indent: -9999px;
+}
+
+.masthead-branding-logo-centered {
+	background-image: url(@mastHeadBrandLogo);
+	background-size:222px 135px;
+	background-repeat:no-repeat;
+	background-position:center;
+	height: 235px;
+	width: 100%;
+	margin: 0px 0;
+}
+
+.masthead-branding-logo-centered a {
 	display: block;
 	width: 100%;
 	height: 100%;

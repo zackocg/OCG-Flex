@@ -1,6 +1,6 @@
 <?php
 
-require_once 'masthead.php';
+require_once 'masthead_layouts.php';
 
 function boxedLayout() {
 global $boxedLayout;
