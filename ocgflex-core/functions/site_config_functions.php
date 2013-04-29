@@ -3,6 +3,17 @@
 require_once 'masthead_layouts.php';
 require_once 'footer_layouts.php';
 
+
+function showBrandLogo() {
+	global $showMastHeadBrandLogo;
+	if ($showMastHeadBrandLogo == true) {
+		echo "masthead-branding-logo";
+	} elseif ($showMastHeadBrandLogo == false) {
+		echo "masthead-branding-link";
+	}
+}
+
+
 function boxedLayout() {
 global $boxedLayout;
 
@@ -36,12 +47,12 @@ function navInGrid() {
 	
 }
 
-function bodyInGrid() {
-	global $bodyInGrid;
+function contentContainerInGrid() {
+	global $contentContainerInGrid;
 	
-	if ($bodyInGrid == true) {
+	if ($contentContainerInGrid == true) {
 		echo "grid";
-	} elseif ($bodyInGrid == false) {
+	} elseif ($contentContainerInGrid == false) {
 		echo "grid flex";
 	}
 	

@@ -661,7 +661,7 @@ input.error {
   width: 100%;
   max-width: 100%;
   padding: 0 2%;
-  padding: 0;
+  padding: 0px;
 }
 .row {
   display: block;

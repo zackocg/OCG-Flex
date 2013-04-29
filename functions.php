@@ -15,4 +15,6 @@ require_once locate_template( '/ocgflex-core/functions/enqueue_scripts.php' );
 require_once locate_template( '/ocgflex-core/functions/sidebars.php' );
 require_once locate_template( '/ocgflex-core/functions/header_widget_area.php' );
 require_once locate_template( '/ocgflex-core/functions/footer_widget_areas.php' );
+
+
 ?>

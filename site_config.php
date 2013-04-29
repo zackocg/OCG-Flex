@@ -42,26 +42,13 @@ $maxGridWidth768 = '700px';
 $maxGridWidth480 = '100%';
 
 
-
-
-/* --------B O D Y   S E T T I N G S --------------*/
-
-$bodyBackground = '#ffffff url(\'../images/background_textures/grey_wash_wall.png\') fixed';
-
-
 /* ------- B O X E D   L A Y O U T ----------------*/
 
 //Set if site requires boxed layout look, this will put everthing into a grid.
 $boxedLayout = false;
 
-
-/* ------- G R I D   S E C T I O N S ----------------*/
-
-$mastHeadInGrid = true; //Set if you want the header inside a grid that is centered.
-$navInGrid = false; //Set if you want the navigation inside a grid that is centered.
-$bodyInGrid = true; //Set if you want the loop body inside a grid that is centered.
-$footerInGrid = true; //Set if you want the footer inside a grid that is centered.
-
+//This will only show when Boxed Layout Is Turned On (true)
+$bodyBackground = 'none';
 
 /* ------- G R I D   S E T T I N G S ----------------*/
 
@@ -69,7 +56,7 @@ $footerInGrid = true; //Set if you want the footer inside a grid that is centere
 $GridPadding = '0px';
 
 //Grid-Flex Padding Global Setting
-$GridFlexPadding = '0';
+$GridFlexPadding = '0px';
 
 
 
@@ -81,7 +68,7 @@ $GridFlexPadding = '0';
 $primaryContainerBorderSize = '0px'; 
 
 //Primary Container Border Color (HEX, RGB, RGBA, and URL for images)
-$primaryContainerBorderColor = 'rgba(0,0,0,.1)';
+$primaryContainerBorderColor = 'none';
 
 //Set Corner Radius for Boxed Layout Primary Container
 $primaryContainerBorder_RoundedCorners_topLeft = '0'; 
@@ -90,12 +77,11 @@ $primaryContainerBorder_RoundedCorners_bottomLeft = '0';
 $primaryContainerBorder_RoundedCorners_bottomRight = '0';
 
 // Primary Container Background ( #ffffff url(\'../images/background_textures/retina_wood.png\') )
-$primaryContainerBackground = '#ffffff url(\'../images/background_textures/retina_wood.png\')';
+$primaryContainerBackground = '#CCCCCC';
 
-$primaryContainer = '';
 
 //Boxed Layout Shadow ( 2px 2px 10px 1px rgba(0, 0, 0, .3) )
-$primaryContainerBoxShadow = '2px 2px 10px 1px rgba(0, 0, 0, .3)';
+$primaryContainerBoxShadow = 'none';
 
 //Set Corner Radius for Boxed Layout Primary Container
 $primaryContainer_RoundedCorners_topLeft = '0'; 
@@ -136,6 +122,8 @@ $H6_size = '';
 
 /*---------M A S T H E A D------------*/
 
+$mastHeadInGrid = true; //Set if you want the header inside a grid that is centered.
+
 //Choose MastHead Layout
 /*
 0 - Custom Header ( /content/sections/custom_masthead.php )
@@ -148,67 +136,85 @@ $H6_size = '';
 7 - Logo Left (col_9), Widget Area Right (col_3) Max Logo Size = 00px X 00px
 8 - Logo Center No Widget Area, Link Full Width & Height
 */
-$mastHeadLayout = '2';
+$mastHeadLayout = '3';
 
 //Masthead Background ( #ffffff url(\'../images/background_textures/retina_wood.png\') )
-$mastHeadBackground = '#ffffff url(\'../images/background_textures/random_grey_variations.png\')'; 
+$mastHeadBackground = 'none'; 
 
 //Masthead Padding
 $mastHeadPadding = '20px 0';
 
-//Show Logo *****CREATE FUNCTION FOR THIS*********
+//Show Logo
 $showMastHeadBrandLogo = true; //true or false
 
 //Company Logo
 $mastHeadBrandLogo = 'ocg_flex_logo.png';
 
 //Align Logo to Link Container (Left, Center, Right)
-$mastHeadBrandLogoAlign = 'center';
-
-
-
+$mastHeadBrandLogoAlign = 'left';
 
 
 
 
 /* ------- N A V I G A T I O N ----------------*/
 
+$navInGrid = false; //Set if you want the navigation inside a grid that is centered.
+
 $useKickstartNav = false; // This is the main fallback navigation styled with Kickstart UIKit
 $useUberMenu = true; // Set to 'true' if UberMenu Plugin is installed NOTE: Turn on 'Easy Integration' in the ubermenu admin panel under 'Theme Integration'
 
+$navBaseBackgroundColor = 'black';
+$navGradientColorTop = '#444444';
+$navGradientColorBottom = '#000000';
+
 
 /* ------- C O N T E N T   C O N T A I N E R ----------------*/
+
+$contentContainerInGrid = true; //Set if you want the loop body inside a grid that is centered.
 
 //Content Container Border Size (Use CSS Padding Atts. eg '20px' or '0 20px')
 $contentContainerBorderSize = '0px'; 
 
 $contentContainerBorderColor = 'none';
 
-$contentContainerBackground = 'none';
+$contentContainerBackground = 'white';
+
+$contentContainerPadding = '';
 
 
 /* ------- F O O T E R ------------*/
 
-$footerLayout = '2';
+$footerInGrid = true; //Set if you want the footer inside a grid that is centered.
 
-$footerBackgroundColor = 'blue'; //Masthead Background Color
+/*
+Footer Layouts
+0 - Custom Layout, Code is in /content/custom_sections/cusom_footer.php
+1 - 1 Column, Footer Area 1 Col 12
+2 - 2 Columns, Footer Area 1 Col 9, Footer Area 2 Col 3
+3 - 2 Columns, Footer Area 1 Col 8, Footer Area 2 Col 4
+4 - 2 Columns, Footer Area 1 Col 7, Footer Area 2 Col 5
+5 - 2 Columns, Footer Area 1 Col 6, Footer Area 2 Col 6
+6 - 2 Columns, Footer Area 1 Col 5, Footer Area 2 Col 7
+7 - 2 Columns, Footer Area 1 Col 4, Footer Area 2 Col 8
+8 - 2 Columns, Footer Area 1 Col 3, Footer Area 2 Col 9
+9 - 3 Columns, Footer Area 1 Col 4, Footer Area 2 Col 4, Footer Area 3 Col 4
+10 - 4 Columns, Footer Area 1 Col 3, Footer Area 2 Col 3, Footer Area 3 Col 3
+11 - 6 Columns, Footer Area 1 Col 2, Footer Area 2 Col 2, Footer Area 3 Col 2, Footer Area 4 Col 2, Footer Area 5 Col 2, Footer Area 6 Col 2
 
-$footerPadding = '10px';
+*/
 
-/* ------- L A Y O U T   S E T T I N G S ----------------*/
+$footerLayout = '1';
+
+$footerBackgroundColor = 'black'; //Masthead Background Color
+
+$footerPadding = '20px 0';
 
 
+/* ------- W O O C O M M E R C E ------------*/
+
+
+//Pass These Varibles to Less Compiler and Layout Function Handler.
 require_once get_stylesheet_directory() . '/assets/less/less.php' ;
-
 require_once get_template_directory() . '/ocgflex-core/functions/site_config_functions.php' ;
-
-
-
-
-
-
-
-
-
 
 ?>

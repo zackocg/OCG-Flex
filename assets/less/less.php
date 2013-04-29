@@ -45,6 +45,10 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   global $mastHeadBrandLogo;
   global $mastHeadBrandLogoAlign;
   
+  //Navigation
+  global $navBaseBackgroundColor;
+  global $navGradientColorTop;
+  global $navGradientColorBottom;
   
   global $mastHeadBackground;
   
@@ -96,12 +100,14 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   "mastHeadPadding" => $mastHeadPadding,
   "mastHeadBrandLogo" => $mastHeadBrandLogo,
   "mastHeadBrandLogoAlign" => $mastHeadBrandLogoAlign,
-  
-  
-  
   "mastHeadBackground" => $mastHeadBackground,
   
+  //Navigation
+  "navBaseBackgroundColor" => $navBaseBackgroundColor,
+  "navGradientColorTop" => $navGradientColorTop,
+  "navGradientColorBottom" => $navGradientColorBottom,
   
+  //Footer  
   "footerBackgroundColor" => $footerBackgroundColor,
   "footerPadding" => $footerPadding,
   

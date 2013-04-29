@@ -14,7 +14,7 @@ less.watch();
 </script>
 
 </head>
-<body>
+<body <?php body_class(); ?>>
 <div id="primary-content-border" class="<?php boxedLayout(); ?>">
 <div id="primary-content-wrapper" class="<?php boxedLayout(); ?>">
 

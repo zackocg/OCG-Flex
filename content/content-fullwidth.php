@@ -1,12 +1,6 @@
 <?php while ( have_posts() ) : the_post(); ?>
-<section id="contentContainerBorder" class="<?php bodyInGrid(); ?>">
-	<div id="contentContainerBackground">
-	
-		<?php
-		
-		
-		
-		?>
+<section id="contentContainerBorder" class="<?php contentContainerInGrid(); ?>">
+	<div id="contentContainer">
 	
 		<div id="main_content" class="col_12">
 			<div class="grid flex">
