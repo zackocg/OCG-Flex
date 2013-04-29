@@ -11,7 +11,32 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 h1 {
-  font-size: 40px;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+h6 {
+  font-size: 30px;
   margin: 0;
   padding: 0;
 }
@@ -35,7 +60,7 @@ h1 {
   border-bottom-left-radius: ;
 }
 #primary-content-wrapper {
-  background: #CCCCCC;
+  background: none;
   padding: 0px;
   -webkit-box-shadow: ;
   box-shadow: ;
@@ -3787,5 +3812,10 @@ p.demo_store {
   .woocommerce-page p.stars span a.active {
     background-image: url(../images/star@2x.png);
     background-size: 16px 48px;
+  }
+}
+@media only screen and (max-with: 768px) {
+  ul.products li.product {
+    width: 50%;
   }
 }

@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 global $post, $woocommerce;
 
 ?>
-<div class="images">
+<div class="images col_6">
 
 	<?php
 		if ( has_post_thumbnail() ) {

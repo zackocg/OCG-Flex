@@ -77,7 +77,7 @@ $primaryContainerBorder_RoundedCorners_bottomLeft = '0';
 $primaryContainerBorder_RoundedCorners_bottomRight = '0';
 
 // Primary Container Background ( #ffffff url(\'../images/background_textures/retina_wood.png\') )
-$primaryContainerBackground = '#CCCCCC';
+$primaryContainerBackground = 'none';
 
 
 //Boxed Layout Shadow ( 2px 2px 10px 1px rgba(0, 0, 0, .3) )
@@ -158,7 +158,7 @@ $mastHeadBrandLogoAlign = 'left';
 
 /* ------- N A V I G A T I O N ----------------*/
 
-$navInGrid = false; //Set if you want the navigation inside a grid that is centered.
+$navInGrid = true; //Set if you want the navigation inside a grid that is centered.
 
 $useKickstartNav = false; // This is the main fallback navigation styled with Kickstart UIKit
 $useUberMenu = true; // Set to 'true' if UberMenu Plugin is installed NOTE: Turn on 'Easy Integration' in the ubermenu admin panel under 'Theme Integration'

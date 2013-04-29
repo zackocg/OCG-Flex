@@ -1,5 +1,6 @@
 <?php while ( have_posts() ) : the_post(); ?>
-<div class="grid">
+<section id="contentContainerBorder" class="<?php contentContainerInGrid(); ?>">
+	<div id="contentContainer">
 	
 	<section id="left_sidebar_content_section" class="col_8">
 		<div class="grid flex">
@@ -14,7 +15,8 @@
 	</aside>
 	
 	<div class="clearfix"></div>
-</div>
+	</div>
+</section>
 
 <?php endwhile; // end of the loop. ?>
 		

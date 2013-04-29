@@ -32,13 +32,13 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce-
 
 		<div class="col2-set" id="customer_details">
 
-			<div class="col-1">
+			<div class="col_6">
 
 				<?php do_action( 'woocommerce_checkout_billing' ); ?>
 
 			</div>
 
-			<div class="col-2">
+			<div class="col_6">
 
 				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
 

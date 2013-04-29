@@ -39,11 +39,11 @@ $col = 1;
 
 <?php foreach ( $get_addresses as $name => $title ) : ?>
 
-	<div class="col-<?php echo ( ( $col = $col * -1 ) < 0 ) ? 1 : 2; ?> address">
-		<header class="title">
+	<div class="address col_6">
+		<div class="title">
 			<h3><?php echo $title; ?></h3>
 			<a href="<?php echo esc_url( add_query_arg('address', $name, get_permalink(woocommerce_get_page_id( 'edit_address' ) ) ) ); ?>" class="edit"><?php _e( 'Edit', 'woocommerce' ); ?></a>
-		</header>
+		</div>
 		<address>
 			<?php
 				$address = apply_filters( 'woocommerce_my_account_my_address_formatted_address', array(
