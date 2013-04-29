@@ -7,5 +7,7 @@
  * @version     1.6.4
  */
 ?>
+
 	</div>
-</div>
+</section>
+<div class="clearfix"></div>

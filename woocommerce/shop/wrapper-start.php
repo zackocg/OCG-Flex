@@ -9,6 +9,10 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
+
+
+
+/*
 $template = get_option('template');
 
 switch( $template ) {
@@ -25,3 +29,8 @@ switch( $template ) {
 		echo '<div id="container"><div id="content" role="main">';
 		break;
 }
+*/
+
+?>
+<section id="contentContainerBorder" class="<?php contentContainerInGrid(); ?>">
+	<div id="contentContainer">

@@ -9,4 +9,8 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-get_sidebar('shop'); ?>
+?>
+
+<div class="col_3">
+	<?php get_sidebar('shop'); ?>
+</div>
