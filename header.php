@@ -42,6 +42,12 @@ switch ($mastHeadLayout) {
     case 6:
         header_layout_6();
         break;
+    case 7:
+        header_layout_7();
+        break;
+    case 8:
+        header_layout_8();
+        break;
 }
 ?>
 

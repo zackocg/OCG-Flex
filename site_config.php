@@ -52,7 +52,7 @@ $boxedLayout = false;
 /* ------- G R I D   S E C T I O N S ----------------*/
 
 $mastHeadInGrid = true; //Set if you want the header inside a grid that is centered.
-$navInGrid = false; //Set if you want the navigation inside a grid that is centered.
+$navInGrid = true; //Set if you want the navigation inside a grid that is centered.
 $bodyInGrid = true; //Set if you want the loop body inside a grid that is centered.
 $footerInGrid = true; //Set if you want the footer inside a grid that is centered.
 
@@ -71,8 +71,20 @@ $GridFlexPadding = "0";
 
 /* ------- P R I M A R Y   C O N T A I N E R ----------------*/
 
+//Primary Container Border Size (Use CSS Padding Atts. eg "20px" or "0 20px")
+$primaryContainerBorderSize = "0px"; 
+
+//Primary Container Border Color (HEX, RGB, RGBA, and URL for images)
+$primaryContainerBorderColor = "rgba(0,0,0,.1)";
+
+//Set Corner Radius for Boxed Layout Primary Container
+$primaryContainerBorder_RoundedCorners_topLeft = "0"; 
+$primaryContainerBorder_RoundedCorners_topRight = "0";
+$primaryContainerBorder_RoundedCorners_bottomLeft = "0";
+$primaryContainerBorder_RoundedCorners_bottomRight = "0";
+
 // Primary Container Background ( #ffffff url(\'../images/background_textures/retina_wood.png\') )
-$primaryContainerBackground = '#ffffff url(\'../images/background_textures/gplaypattern.png\')';
+$primaryContainerBackground = '#ffffff';
 
 $primaryContainer = "";
 
@@ -95,15 +107,6 @@ $primaryContainerMargin = "0px auto"; // (top, right, bottom, left) for center p
 $primaryContainerMarginMobile = "0 0";
 
 
-
-
-/* ------- C O N T E N T   C O N T A I N E R ----------------*/
-
-$contentContainerBackground = 'blue';
-
-
-
-
 /* ------- T Y P O G R A P H Y ----------------*/
 
 $googleWebFonts = "";
@@ -122,6 +125,12 @@ $H6_size = "";
 
 /*---------M A S T H E A D------------*/
 
+//Masthead Background ( #ffffff url('img_tree.png') no-repeat right top; )
+$mastHeadBackground = "none"; 
+
+//Masthead Padding
+$mastHeadPadding = "20px 0";
+
 //Choose MastHead Layout
 /*
 0 - Custom Header ( /content/sections/custom_masthead.php )
@@ -133,16 +142,18 @@ $H6_size = "";
 6 - Logo Left (col_8), Widget Area Right (col_4) Max Logo Size = 00px X 00px
 7 - Logo Left (col_9), Widget Area Right (col_3) Max Logo Size = 00px X 00px
 */
-$mastHeadLayout = "3";
+$mastHeadLayout = "2";
 
-//Show Logo
+//Show Logo *****CREATE FUNCTION FOR THIS*********
 $showMastHeadBrandLogo = true; //true or false
 
 //Company Logo
 $mastHeadBrandLogo = "ocg_flex_logo.png";
 
-//Masthead Background ( #ffffff url('img_tree.png') no-repeat right top; )
-$mastHeadBackground = "none"; 
+//Align Logo to Link Container (Left, Center, Right)
+$mastHeadBrandLogoAlign = "center";
+
+
 
 
 
@@ -154,11 +165,14 @@ $useKickstartNav = false; // This is the main fallback navigation styled with Ki
 $useUberMenu = true; // Set to 'true' if UberMenu Plugin is installed NOTE: Turn on "Easy Integration" in the ubermenu admin panel under "Theme Integration"
 
 
+/* ------- C O N T E N T   C O N T A I N E R ----------------*/
 
+//Content Container Border Size (Use CSS Padding Atts. eg "20px" or "0 20px")
+$contentContainerBorderSize = "0px"; 
 
+$contentContainerBorderColor = "none";
 
-/* ------- C O N T E N T ------------*/
-
+$contentContainerBackground = 'none';
 
 
 /* ------- F O O T E R ------------*/

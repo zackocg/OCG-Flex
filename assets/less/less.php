@@ -16,28 +16,32 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   //Body Settings
   global $bodyBackground;
   
-  //Boxed Layout
+  //Grid Padding - Global
+  global $GridPadding;
+  global $GridFlexPadding;
+  
+  //Primary Container
+  global $primaryContainerBorderSize;
+  global $primaryContainerBorderColor;
+  global $primaryContainerBackground;
+  global $primaryContainerMargin;
+  global $primaryContainerMarginMobile;
+  global $primaryContainerPadding;
   global $primaryContainerBoxShadow;
   global $primaryContainer_RoundedCorners_topLeft; 
   global $primaryContainer_RoundedCorners_topRight;
   global $primaryContainer_RoundedCorners_bottomLeft;
   global $primaryContainer_RoundedCorners_bottomRight;
   
-  //Grid Padding - Global
-  global $GridPadding;
-  global $GridFlexPadding;
-  
-  //Primary Container
-  global $primaryContainerBackground;
-  global $primaryContainerMargin;
-  global $primaryContainerMarginMobile;
-  global $primaryContainerPadding;
-  
   //Content Container
+  global $contentContainerBorderSize;
+  global $contentContainerBorderColor;
   global $contentContainerBackground;
   
   //Masthead
+  global $mastHeadPadding;
   global $mastHeadBrandLogo;
+  global $mastHeadBrandLogoAlign;
   
   
   global $mastHeadBackground;
@@ -52,31 +56,42 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   $less = new lessc;
   
   $less->setVariables(array(
+  "bodyBackground" => $bodyBackground,
+  
   "maxGridWidth" => $maxGridWidth,
   "maxGridWidth1280" => $maxGridWidth1280,
   "maxGridWidth1024" => $maxGridWidth1024,
   "maxGridWidth768" => $maxGridWidth768,
   "maxGridWidth480" => $maxGridWidth480,
+  "GridPadding" => $GridPadding,
+  "GridFlexPadding" => $GridFlexPadding,
   
+  //Primary Container
+  "primaryContainerBorderSize" => $primaryContainerBorderSize,
+  "primaryContainerBorderColor" => $primaryContainerBorderColor,
+  "primaryContainerBackground" => $primaryContainerBackground,
+  "primaryContainerPadding" => $primaryContainerPadding,
+  "primaryContainerMargin" => $primaryContainerMargin,
+  "primaryContainerMarginMobile" => $primaryContainerMarginMobile,
   "primaryContainerBoxShadow" => $primaryContainerBoxShadow,
   "primaryContainer_RoundedCorners_topLeft" => $primaryContainer_RoundedCorners_topLeft,
   "primaryContainer_RoundedCorners_topRight" => $primaryContainer_RoundedCorners_topRight,
   "primaryContainer_RoundedCorners_bottomLeft" => $primaryContainer_RoundedCorners_bottomLeft,
   "primaryContainer_RoundedCorners_bottomRight" => $primaryContainer_RoundedCorners_bottomRight,
   
-  "GridPadding" => $GridPadding,
-  "GridFlexPadding" => $GridFlexPadding,
-  
-  "primaryContainerBackground" => $primaryContainerBackground,
-  "primaryContainerPadding" => $primaryContainerPadding,
-  "primaryContainerMargin" => $primaryContainerMargin,
-  "primaryContainerMarginMobile" => $primaryContainerMarginMobile,
   
   //Content Container
+  "contentContainerBorderSize" => $contentContainerBorderSize,
+  "contentContainerBorderColor" => $contentContainerBorderColor,
   "contentContainerBackground" => $contentContainerBackground,
   
+  
+  //Mast Head
+  "mastHeadPadding" => $mastHeadPadding,
   "mastHeadBrandLogo" => $mastHeadBrandLogo,
-  "bodyBackground" => $bodyBackground,
+  "mastHeadBrandLogoAlign" => $mastHeadBrandLogoAlign,
+  
+  
   
   "mastHeadBackground" => $mastHeadBackground,
   "footerBackgroundColor" => $footerBackgroundColor,

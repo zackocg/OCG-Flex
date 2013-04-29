@@ -149,3 +149,17 @@ function header_layout_7() {
 <?php
 }
 ?>
+<?php
+// Center Logo No Widget Area
+function header_layout_8() {
+?>
+
+<header>
+	<div class="<?php mastHeadInGrid(); ?>">
+		<div class="col_12 masthead-branding-logo-centered"><a href="<?php echo site_url(); ?>">Home Page</a></div>
+		<div class="clearfix"></div>
+	</div>
+</header>
+<?php
+}
+?>
