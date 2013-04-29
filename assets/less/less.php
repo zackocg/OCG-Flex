@@ -38,6 +38,8 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   global $contentContainerBorderColor;
   global $contentContainerBackground;
   
+  //Typography
+  
   //Masthead
   global $mastHeadPadding;
   global $mastHeadBrandLogo;
@@ -45,7 +47,9 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   
   
   global $mastHeadBackground;
+  
   global $footerBackgroundColor;
+  global $footerPadding;
   
   //Render Image URLs Correctly
   $mastHeadBrandLogo = "'" . get_stylesheet_directory_uri() . "/assets/images/" . $mastHeadBrandLogo . "'";
@@ -86,6 +90,8 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   "contentContainerBackground" => $contentContainerBackground,
   
   
+  //Typography
+  
   //Mast Head
   "mastHeadPadding" => $mastHeadPadding,
   "mastHeadBrandLogo" => $mastHeadBrandLogo,
@@ -94,7 +100,11 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   
   
   "mastHeadBackground" => $mastHeadBackground,
+  
+  
   "footerBackgroundColor" => $footerBackgroundColor,
+  "footerPadding" => $footerPadding,
+  
   ));
   
   if ( $cssminify == true ) {

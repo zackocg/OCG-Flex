@@ -1,6 +1,7 @@
 <?php
 
 require_once 'masthead_layouts.php';
+require_once 'footer_layouts.php';
 
 function boxedLayout() {
 global $boxedLayout;
