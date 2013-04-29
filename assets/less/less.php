@@ -17,11 +17,11 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   global $bodyBackground;
   
   //Boxed Layout
-  global $boxedLayoutBoxShadow;
-  global $boxedLayout_RoundedCorners_topLeft; 
-  global $boxedLayout_RoundedCorners_topRight;
-  global $boxedLayout_RoundedCorners_bottomLeft;
-  global $boxedLayout_RoundedCorners_bottomRight;
+  global $primaryContainerBoxShadow;
+  global $primaryContainer_RoundedCorners_topLeft; 
+  global $primaryContainer_RoundedCorners_topRight;
+  global $primaryContainer_RoundedCorners_bottomLeft;
+  global $primaryContainer_RoundedCorners_bottomRight;
   
   //Grid Padding - Global
   global $GridPadding;
@@ -57,11 +57,12 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   "maxGridWidth1024" => $maxGridWidth1024,
   "maxGridWidth768" => $maxGridWidth768,
   "maxGridWidth480" => $maxGridWidth480,
-  "boxedLayoutBoxShadow" => $boxedLayoutBoxShadow,
-  "boxedLayout_RoundedCorners_topLeft" => $boxedLayout_RoundedCorners_topLeft,
-  "boxedLayout_RoundedCorners_topRight" => $boxedLayout_RoundedCorners_topRight,
-  "boxedLayout_RoundedCorners_bottomLeft" => $boxedLayout_RoundedCorners_bottomLeft,
-  "boxedLayout_RoundedCorners_bottomRight" => $boxedLayout_RoundedCorners_bottomRight,
+  
+  "primaryContainerBoxShadow" => $primaryContainerBoxShadow,
+  "primaryContainer_RoundedCorners_topLeft" => $primaryContainer_RoundedCorners_topLeft,
+  "primaryContainer_RoundedCorners_topRight" => $primaryContainer_RoundedCorners_topRight,
+  "primaryContainer_RoundedCorners_bottomLeft" => $primaryContainer_RoundedCorners_bottomLeft,
+  "primaryContainer_RoundedCorners_bottomRight" => $primaryContainer_RoundedCorners_bottomRight,
   
   "GridPadding" => $GridPadding,
   "GridFlexPadding" => $GridFlexPadding,

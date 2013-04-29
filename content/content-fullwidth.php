@@ -12,8 +12,8 @@
 			<div class="grid flex">
 				<?php the_content(); ?>
 			</div>
-			<h2>Comments</h2>
-			<?php comments_template( '', true ); ?>
+			<!-- <h2>Comments</h2> -->
+			<?php //comments_template( '', true ); ?>
 		</div>
 		<div class="clearfix"></div>
 	</div>

@@ -48,18 +48,6 @@ $bodyBackground = '#ffffff url(\'../images/background_textures/grey_wash_wall.pn
 //Set if site requires boxed layout look, this will put everthing into a grid.
 $boxedLayout = false;
 
-//Boxed Layout Shadow ( 2px 2px 10px 1px rgba(0, 0, 0, .3) )
-$boxedLayoutBoxShadow = "2px 2px 10px 1px rgba(0, 0, 0, .3)";
-
-//Set Corner Radius for Boxed Layout Primary Container
-$boxedLayout_RoundedCorners_topLeft = "0"; 
-$boxedLayout_RoundedCorners_topRight = "0";
-$boxedLayout_RoundedCorners_bottomLeft = "0";
-$boxedLayout_RoundedCorners_bottomRight = "0";
-
-
-
-
 
 /* ------- G R I D   S E C T I O N S ----------------*/
 
@@ -84,7 +72,18 @@ $GridFlexPadding = "0";
 /* ------- P R I M A R Y   C O N T A I N E R ----------------*/
 
 // Primary Container Background ( #ffffff url(\'../images/background_textures/retina_wood.png\') )
-$primaryContainerBackground = '#CCCCCC';
+$primaryContainerBackground = '#ffffff url(\'../images/background_textures/gplaypattern.png\')';
+
+$primaryContainer = "";
+
+//Boxed Layout Shadow ( 2px 2px 10px 1px rgba(0, 0, 0, .3) )
+$primaryContainerBoxShadow = "2px 2px 10px 1px rgba(0, 0, 0, .3)";
+
+//Set Corner Radius for Boxed Layout Primary Container
+$primaryContainer_RoundedCorners_topLeft = "0"; 
+$primaryContainer_RoundedCorners_topRight = "0";
+$primaryContainer_RoundedCorners_bottomLeft = "0";
+$primaryContainer_RoundedCorners_bottomRight = "0";
 
 //Inner Padding of Main Container
 $primaryContainerPadding = "0px";
@@ -94,6 +93,8 @@ $primaryContainerMargin = "0px auto"; // (top, right, bottom, left) for center p
 
 //Set Body Content Container Margin for Mobile (Max Width 480px)
 $primaryContainerMarginMobile = "0 0";
+
+
 
 
 /* ------- C O N T E N T   C O N T A I N E R ----------------*/
