@@ -1,19 +1,28 @@
 <?php while ( have_posts() ) : the_post(); ?>
-<div class="grid">
+<section id="contentContainerBorder" class="<?php contentContainerInGrid(); ?>">
+	<div id="contentContainer">
 
-	<div id="main_content" class="col_8">
+	<?php
+	//Show Title of Page
+get_template_part('partials/partial', 'pagetitle');
+	?>
+
+	<div id="main_content" class="col_7">
 		<div class="grid flex">
 			<?php the_content(); ?>
 		</div>
-		<h2>Comments</h2>
-		<?php comments_template( '', true ); ?>
+		
 	</div>
 	
-	<div id="primarySidebar" class="col_4">
+	<div id="primarySidebar" class="col_5">
+		<ul>
 		<?php dynamic_sidebar('primary-sidebar'); ?>
+		</ul>
 	</div>
+	<div class="clearfix"></div>
 </div>
-<div class="clearfix"></div>
+</section>
+
 <?php endwhile; // end of the loop. ?>
 		
 			

@@ -4,7 +4,7 @@ get_header();
 
 
 //Show Body Content
-get_template_part('woocommerce/woocommerce', 'layout');
+require_once get_stylesheet_directory() . '/woocommerce/woocommerce-layout.php';
 
 
 //Show Footer

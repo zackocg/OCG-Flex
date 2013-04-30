@@ -5,7 +5,7 @@ function theme_styles()
 { 
   
   wp_register_style( 'custom-style', 
-    get_template_directory_uri() . '/assets/css/master_style.css', 
+    get_stylesheet_directory_uri() . '/assets/css/master_style.css', 
     array(), 
     '20120208', 
     'all' );

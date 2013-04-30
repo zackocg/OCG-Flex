@@ -4,7 +4,7 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	
-	<title>OCG Flex</title>
+	<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 
 <?php wp_head(); ?>
 

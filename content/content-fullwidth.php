@@ -1,7 +1,12 @@
 <?php while ( have_posts() ) : the_post(); ?>
 <section id="contentContainerBorder" class="<?php contentContainerInGrid(); ?>">
 	<div id="contentContainer">
-	
+		
+		<?php
+		//Show Title of Page
+		get_template_part('partials/partial', 'pagetitle');
+		?>
+		
 		<div id="main_content" class="col_12">
 			<div class="grid flex">
 				<?php the_content(); ?>

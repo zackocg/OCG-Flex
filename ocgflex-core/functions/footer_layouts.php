@@ -9,7 +9,7 @@ function footer_layout_0() {
 ?>
 <footer>
 	<div class="<?php footerInGrid(); ?>">
-		<?php require_once get_stylesheet_directory() . '/content/custom_sections/custom_footer.php'; ?>
+		<?php require_once get_template_directory() . '/content/custom_sections/custom_footer.php'; ?>
 		<div class="clearfix"></div>
 	</div>
 </footer>
