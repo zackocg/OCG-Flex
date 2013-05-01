@@ -11,7 +11,7 @@
 
 /* Menu Bar */
 #megaMenu {
-/*   border: 1px solid #e0e0e0; */
+  border: 1px solid #e0e0e0;
 background: @navBaseBackgroundColor; /* Old browsers */
 background: -moz-linear-gradient(top, @navGradientColorTop 0%, @navGradientColorBottom 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@navGradientColorTop), color-stop(100%,@navGradientColorBottom)); /* Chrome,Safari4+ */
@@ -20,14 +20,14 @@ background: -o-linear-gradient(top, @navGradientColorTop 0%,@navGradientColorBot
 background: -ms-linear-gradient(top, @navGradientColorTop 0%,@navGradientColorBottom 100%); /* IE10+ */
 background: linear-gradient(to bottom, @navGradientColorTop 0%,@navGradientColorBottom 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@navGradientColorTop', endColorstr='@navGradientColorBottom',GradientType=0 ); /* IE6-9 */
-  /*
--webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  
+-webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-*/
+
   /*
 -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.9);
   -moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.9);
@@ -40,7 +40,7 @@ z-index: 20000;
 /* Top Level Items */
 #megaMenu ul.megaMenu > li > a, #megaMenu ul.megaMenu > li > span.um-anchoremulator {
   font-size: 14px;
-  color: white;
+  color: #999999;
   padding: 12px 15px;
   font-weight: normal;
 }
@@ -83,7 +83,7 @@ border-top: 1px solid #f0f0f0;
 
 /* Top Level Items - Hover */
 #megaMenu ul.megaMenu > li:hover > a, #megaMenu ul.megaMenu > li > a:hover, #megaMenu ul.megaMenu > li.megaHover > a {
-  color: white;
+  color: #999999;
   /*
 border-bottom-color: transparent !important;
   background-color: transparent;
@@ -110,7 +110,7 @@ border-bottom-color: transparent !important;
 
 /* Top Level Items - Current Item */
 #megaMenu ul.megaMenu > li.current-menu-item > a, #megaMenu ul.megaMenu > li.current-menu-parent > a, #megaMenu ul.megaMenu > li.current-menu-ancestor > a {
-  color: white;
+  color: #888888;
 }
 
 /* Sub Menu Container Style */

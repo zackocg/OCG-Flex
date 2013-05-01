@@ -18,9 +18,17 @@ function theme_styles()
   
   wp_register_script('less.js', get_stylesheet_directory_uri() . '/ocgflex-core/lesscompiler/less.js');
   
+  //Resonsive Text by GroundWork
+  wp_register_script('jquery.responsiveText.js', get_template_directory_uri() . '/ocgflex-core/js/jquery.responsiveText.js');
+  wp_register_script('responsiveText.js', get_template_directory_uri() . '/ocgflex-core/js/responsiveText.js');
+  
   
   //Enqueue JS Files
   wp_enqueue_script( 'less.js' );
+  
+  //Enqueue Responsive Text Lib
+  wp_enqueue_script( 'jquery.responsiveText.js' );
+  wp_enqueue_script( 'responsiveText.js' );
   
 }
 add_action('wp_enqueue_scripts', 'theme_styles');

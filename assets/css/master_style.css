@@ -11,17 +11,17 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 h1 {
-  font-size: 30px;
+  font-size: 60px;
   margin: 0;
   padding: 0;
 }
 h2 {
-  font-size: 30px;
+  font-size: 50px;
   margin: 0;
   padding: 0;
 }
 h3 {
-  font-size: 30px;
+  font-size: 40px;
   margin: 0;
   padding: 0;
 }
@@ -31,12 +31,12 @@ h4 {
   padding: 0;
 }
 h5 {
-  font-size: 30px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
 }
 h6 {
-  font-size: 30px;
+  font-size: 12px;
   margin: 0;
   padding: 0;
 }
@@ -1253,21 +1253,28 @@ footer {
   display: block;
 }
 #megaMenu {
+  border: 1px solid #e0e0e0;
   background: black;
-  background: -moz-linear-gradient(top,#444444 0%,#000000 100%);
-  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#444444),color-stop(100%,#000000));
-  background: -webkit-linear-gradient(top,#444444 0%,#000000 100%);
-  background: -o-linear-gradient(top,#444444 0%,#000000 100%);
-  background: -ms-linear-gradient(top,#444444 0%,#000000 100%);
-  background: linear-gradient(to bottom,#444444 0%,#000000 100%);
+  background: -moz-linear-gradient(top,#FFFFFF 0%,#EFEFEF 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#FFFFFF),color-stop(100%,#EFEFEF));
+  background: -webkit-linear-gradient(top,#FFFFFF 0%,#EFEFEF 100%);
+  background: -o-linear-gradient(top,#FFFFFF 0%,#EFEFEF 100%);
+  background: -ms-linear-gradient(top,#FFFFFF 0%,#EFEFEF 100%);
+  background: linear-gradient(to bottom,#FFFFFF 0%,#EFEFEF 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@navGradientColorTop',endColorstr='@navGradientColorBottom',GradientType=0);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   position: none;
   z-index: 20000;
 }
 #megaMenu ul.megaMenu > li > a,
 #megaMenu ul.megaMenu > li > span.um-anchoremulator {
   font-size: 14px;
-  color: white;
+  color: #999999;
   padding: 12px 15px;
   font-weight: normal;
 }
@@ -1286,12 +1293,12 @@ footer {
 #megaMenu ul.megaMenu > li:hover > a,
 #megaMenu ul.megaMenu > li > a:hover,
 #megaMenu ul.megaMenu > li.megaHover > a {
-  color: white;
+  color: #999999;
 }
 #megaMenu ul.megaMenu > li.current-menu-item > a,
 #megaMenu ul.megaMenu > li.current-menu-parent > a,
 #megaMenu ul.megaMenu > li.current-menu-ancestor > a {
-  color: white;
+  color: #888888;
 }
 #megaMenu ul.megaMenu > li.ss-nav-menu-mega > ul.sub-menu-1,
 #megaMenu ul.megaMenu li.ss-nav-menu-reg ul.sub-menu {

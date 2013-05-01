@@ -176,8 +176,8 @@ $useKickstartNav = false; // This is the main fallback navigation styled with Ki
 $useUberMenu = true; // Set to 'true' if UberMenu Plugin is installed NOTE: Turn on 'Easy Integration' in the ubermenu admin panel under 'Theme Integration'
 
 $navBaseBackgroundColor = 'black';
-$navGradientColorTop = '#444444';
-$navGradientColorBottom = '#000000';
+$navGradientColorTop = '#FFFFFF';
+$navGradientColorBottom = '#EFEFEF';
 
 
 /* ------- C O N T E N T   C O N T A I N E R ----------------*/
