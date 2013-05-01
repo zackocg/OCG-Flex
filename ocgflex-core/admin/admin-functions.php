@@ -1,6 +1,6 @@
 <?php
 /** Step 2 (from text above). */
-add_action( 'admin_menu', 'ocg_flex_admin_menu' );
+//add_action( 'admin_menu', 'ocg_flex_admin_menu' );
 
 
 

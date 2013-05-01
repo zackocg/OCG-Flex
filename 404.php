@@ -1,9 +1,4 @@
 <?php
-/*
-Template Name: Full Width
-*/
-
-
 //Show Mast Head
 get_header();
 

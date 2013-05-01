@@ -216,9 +216,9 @@ Footer Layouts
 
 */
 
-$footerLayout = '1';
+$footerLayout = '9';
 
-$footerBackgroundColor = 'black'; //Masthead Background Color
+$footerBackgroundColor = '#999999'; //Masthead Background Color
 
 $footerPadding = '20px 0';
 

@@ -1,9 +1,4 @@
 <?php
-/*
-Template Name: Right Sidebar
-*/
-
-
 //Show Mast Head
 get_header();
 

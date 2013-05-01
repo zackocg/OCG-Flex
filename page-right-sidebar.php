@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Right Sidebar
+Template Name: Right Side Bar
 */
 
 
@@ -8,7 +8,7 @@ Template Name: Right Sidebar
 get_header();
 
 //Show Body Content
-get_template_part('content/content', 'right-sidebar');
+//get_template_part('content/content', 'right-sidebar');
 
 
 //Show Footer
