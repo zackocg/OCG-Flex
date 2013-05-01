@@ -60,7 +60,7 @@ h6 {
   border-bottom-left-radius: 5px;
 }
 #primary-content-wrapper {
-  background: #ffffff;
+  background: #efefef;
   padding: 0px;
   -webkit-box-shadow: ;
   box-shadow: ;
@@ -92,13 +92,12 @@ h6 {
   }
 }
 @media only screen and (max-width: 480px) {
-  #primary-content-wrapper {
-    padding: ;
-    margin: ;
+  #primary-content-border {
+    margin: 0px 15px;
   }
 }
 header {
-  background: none;
+  background: #ffffff;
   padding: 20px 0;
   padding: null;
 }
@@ -129,6 +128,11 @@ header {
   width: 100%;
   height: 100%;
   text-indent: -9999px;
+}
+@media only screen and (max-width: 480px) {
+  .masthead-branding-logo {
+    background-position: center;
+  }
 }
 #contentContainerBorder {
   padding: 0px;
@@ -1270,6 +1274,7 @@ footer {
   background-clip: padding-box;
   position: none;
   z-index: 20000;
+  max-width: null;
 }
 #megaMenu ul.megaMenu > li > a,
 #megaMenu ul.megaMenu > li > span.um-anchoremulator {

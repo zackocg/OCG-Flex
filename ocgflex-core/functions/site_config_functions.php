@@ -24,6 +24,16 @@ function showNavigationBottom() {
 	}
 }
 
+function showNavigationTopFixed() {
+	global $navPositionAroundMasthead;
+	if ($navPositionAroundMasthead == '2') {
+		useKickstartNav();
+		useUberMenu();
+	} else {
+		
+	}
+}
+
 
 global $stickyNav;
 if ($stickyNav == true) {

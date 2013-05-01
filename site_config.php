@@ -45,7 +45,7 @@ $maxGridWidth480 = '100%';
 /* ------- B O X E D   L A Y O U T ----------------*/
 
 //Set if site requires boxed layout look, this will put everthing into a grid.
-$boxedLayout = false;
+$boxedLayout = true;
 
 //This will only show when Boxed Layout Is Turned On (true)
 $bodyBackground = '#ffffff url(\'../images/background_textures/gplaypattern.png\')';
@@ -77,7 +77,7 @@ $primaryContainerBorder_RoundedCorners_bottomLeft = '5px';
 $primaryContainerBorder_RoundedCorners_bottomRight = '5px';
 
 // Primary Container Background ( #ffffff url(\'../images/background_textures/retina_wood.png\') )
-$primaryContainerBackground = '#ffffff';
+$primaryContainerBackground = '#efefef';
 
 
 //Boxed Layout Shadow ( 2px 2px 10px 1px rgba(0, 0, 0, .3) )
@@ -96,7 +96,7 @@ $primaryContainerPadding = '0px';
 $primaryContainerMargin = '0px auto'; // (top, right, bottom, left) for center page (0 auto)
 
 //Set Body Content Container Margin for Mobile (Max Width 480px)
-$primaryContainerMarginMobile = '0 0';
+$primaryContainerMarginMobile = '0px 15px';
 
 
 /* ------- T Y P O G R A P H Y ----------------*/
@@ -139,7 +139,7 @@ $mastHeadInGrid = true; //Set if you want the header inside a grid that is cente
 $mastHeadLayout = '3';
 
 //Masthead Background ( #ffffff url(\'../images/background_textures/retina_wood.png\') )
-$mastHeadBackground = 'none'; 
+$mastHeadBackground = '#ffffff'; 
 
 //Masthead Padding
 $mastHeadPadding = '20px 0';
@@ -162,6 +162,7 @@ $mastHeadBrandLogoAlign = 'left';
 Navigation Above or Below Mast Head Container
 0 - Above
 1 - Below
+2 - Fixed to Top ( Set $stickyNav below to "true" )
 */
 $navPositionAroundMasthead = '1';
 
@@ -169,7 +170,7 @@ $navPositionAroundMasthead = '1';
 $navInGrid = true; //Set if you want the navigation inside a grid that is centered.
 
 $stickyNav = false; //Fix Header to Top of Page
-$stickyNavPrimaryContainerMarginTop = "null "; //When Menu is Fixed, Push Primary Content Container Down So It Doesn't 
+$stickyNavPrimaryContainerMarginTop = "null"; //When Menu is Fixed, Push Primary Content Container Down So It Doesn't 
 
 
 $useKickstartNav = false; // This is the main fallback navigation styled with Kickstart UIKit

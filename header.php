@@ -15,6 +15,7 @@ less.watch();
 
 </head>
 <body <?php body_class(); ?>>
+<?php showNavigationTopFixed(); ?>
 <div id="primary-content-border" class="<?php boxedLayout(); ?>">
 <div id="primary-content-wrapper" class="<?php boxedLayout(); ?>">
 

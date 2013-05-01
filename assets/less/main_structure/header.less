@@ -1,7 +1,7 @@
 header {
 	background: @mastHeadBackground;
 	padding: @mastHeadPadding;
-	padding: @stickyNavPrimaryContainerMarginTop;
+	padding: @stickyNavPrimaryContainerMarginTop; //Sticky Header Padding Override
 }
 
 .masthead-branding-logo {
@@ -35,4 +35,23 @@ header {
 	width: 100%;
 	height: 100%;
 	text-indent: -9999px;
+}
+
+nav {
+	
+}
+
+/*--------------------------------
+	R E S P O N S I V E
+----------------------------------*/
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+	.masthead-branding-logo {
+		background-position: center;
+	/* 	background: aqua; */
+	}
 }
