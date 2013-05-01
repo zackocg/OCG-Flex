@@ -23,6 +23,10 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   //Primary Container
   global $primaryContainerBorderSize;
   global $primaryContainerBorderColor;
+  global $primaryContainerBorder_RoundedCorners_topLeft;
+  global $primaryContainerBorder_RoundedCorners_topRight;
+  global $primaryContainerBorder_RoundedCorners_bottomLeft;
+  global $primaryContainerBorder_RoundedCorners_bottomRight;
   global $primaryContainerBackground;
   global $primaryContainerMargin;
   global $primaryContainerMarginMobile;
@@ -46,6 +50,8 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   global $mastHeadBrandLogoAlign;
   
   //Navigation
+  global $stickyNavFixed;
+  global $stickyNavPrimaryContainerMarginTop;
   global $navBaseBackgroundColor;
   global $navGradientColorTop;
   global $navGradientColorBottom;
@@ -77,6 +83,10 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   //Primary Container
   "primaryContainerBorderSize" => $primaryContainerBorderSize,
   "primaryContainerBorderColor" => $primaryContainerBorderColor,
+  "primaryContainerBorder_RoundedCorners_topLeft" => $primaryContainerBorder_RoundedCorners_topLeft,
+  "primaryContainerBorder_RoundedCorners_topRight" => $primaryContainerBorder_RoundedCorners_topRight,
+  "primaryContainerBorder_RoundedCorners_bottomLeft" => $primaryContainerBorder_RoundedCorners_bottomLeft,
+  "primaryContainerBorder_RoundedCorners_bottomRight" => $primaryContainerBorder_RoundedCorners_bottomRight,
   "primaryContainerBackground" => $primaryContainerBackground,
   "primaryContainerPadding" => $primaryContainerPadding,
   "primaryContainerMargin" => $primaryContainerMargin,
@@ -103,6 +113,8 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   "mastHeadBackground" => $mastHeadBackground,
   
   //Navigation
+  "stickyNavFixed" => $stickyNavFixed,
+  "stickyNavPrimaryContainerMarginTop" => $stickyNavPrimaryContainerMarginTop,
   "navBaseBackgroundColor" => $navBaseBackgroundColor,
   "navGradientColorTop" => $navGradientColorTop,
   "navGradientColorBottom" => $navGradientColorBottom,

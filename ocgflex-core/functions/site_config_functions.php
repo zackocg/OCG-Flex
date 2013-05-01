@@ -4,6 +4,35 @@ require_once 'masthead_layouts.php';
 require_once 'footer_layouts.php';
 
 
+function showNavigationTop() {
+	global $navPositionAroundMasthead;
+	if ($navPositionAroundMasthead == '0') {
+		useKickstartNav();
+		useUberMenu();
+	} else {
+		
+	}
+}
+
+function showNavigationBottom() {
+	global $navPositionAroundMasthead;
+	if ($navPositionAroundMasthead == '1') {
+		useKickstartNav();
+		useUberMenu();
+	} else {
+		
+	}
+}
+
+
+global $stickyNav;
+if ($stickyNav == true) {
+	$stickyNavFixed = "fixed";
+} elseif ($stickyNav == false) {
+	$stickyNavFixed = "none";
+}
+
+
 function showBrandLogo() {
 	global $showMastHeadBrandLogo;
 	if ($showMastHeadBrandLogo == true) {

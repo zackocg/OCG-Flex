@@ -48,7 +48,7 @@ $maxGridWidth480 = '100%';
 $boxedLayout = false;
 
 //This will only show when Boxed Layout Is Turned On (true)
-$bodyBackground = 'none';
+$bodyBackground = '#ffffff url(\'../images/background_textures/gplaypattern.png\')';
 
 /* ------- G R I D   S E T T I N G S ----------------*/
 
@@ -68,20 +68,20 @@ $GridFlexPadding = '0px';
 $primaryContainerBorderSize = '0px'; 
 
 //Primary Container Border Color (HEX, RGB, RGBA, and URL for images)
-$primaryContainerBorderColor = 'none';
+$primaryContainerBorderColor = 'white';
 
 //Set Corner Radius for Boxed Layout Primary Container
-$primaryContainerBorder_RoundedCorners_topLeft = '0'; 
-$primaryContainerBorder_RoundedCorners_topRight = '0';
-$primaryContainerBorder_RoundedCorners_bottomLeft = '0';
-$primaryContainerBorder_RoundedCorners_bottomRight = '0';
+$primaryContainerBorder_RoundedCorners_topLeft = '5px'; 
+$primaryContainerBorder_RoundedCorners_topRight = '5px';
+$primaryContainerBorder_RoundedCorners_bottomLeft = '5px';
+$primaryContainerBorder_RoundedCorners_bottomRight = '5px';
 
 // Primary Container Background ( #ffffff url(\'../images/background_textures/retina_wood.png\') )
-$primaryContainerBackground = 'none';
+$primaryContainerBackground = '#ffffff';
 
 
 //Boxed Layout Shadow ( 2px 2px 10px 1px rgba(0, 0, 0, .3) )
-$primaryContainerBoxShadow = 'none';
+$primaryContainerBoxShadow = '2px 2px 10px 1px rgba(0, 0, 0, .3)';
 
 //Set Corner Radius for Boxed Layout Primary Container
 $primaryContainer_RoundedCorners_topLeft = '0'; 
@@ -158,7 +158,19 @@ $mastHeadBrandLogoAlign = 'left';
 
 /* ------- N A V I G A T I O N ----------------*/
 
+/*
+Navigation Above or Below Mast Head Container
+0 - Above
+1 - Below
+*/
+$navPositionAroundMasthead = '1';
+
+
 $navInGrid = true; //Set if you want the navigation inside a grid that is centered.
+
+$stickyNav = false; //Fix Header to Top of Page
+$stickyNavPrimaryContainerMarginTop = "null "; //When Menu is Fixed, Push Primary Content Container Down So It Doesn't 
+
 
 $useKickstartNav = false; // This is the main fallback navigation styled with Kickstart UIKit
 $useUberMenu = true; // Set to 'true' if UberMenu Plugin is installed NOTE: Turn on 'Easy Integration' in the ubermenu admin panel under 'Theme Integration'
@@ -214,7 +226,8 @@ $footerPadding = '20px 0';
 
 
 //Pass These Varibles to Less Compiler and Layout Function Handler.
-require_once get_stylesheet_directory() . '/assets/less/less.php' ;
 require_once get_template_directory() . '/ocgflex-core/functions/site_config_functions.php' ;
+require_once get_stylesheet_directory() . '/assets/less/less.php' ;
+
 
 ?>

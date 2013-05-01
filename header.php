@@ -19,6 +19,15 @@ less.watch();
 <div id="primary-content-wrapper" class="<?php boxedLayout(); ?>">
 
 <?php
+
+showNavigationTop();
+
+?>
+
+<?php
+
+
+
 global $mastHeadLayout;
 switch ($mastHeadLayout) {
     case 0:
@@ -51,12 +60,9 @@ switch ($mastHeadLayout) {
 }
 ?>
 
-
-<!-- Header Navigation -->
-<?php useKickstartNav(); ?>
-
-<!-- Ubermenu -->
-<?php useUberMenu(); ?>
+<?php
+	showNavigationBottom();
+?>
 
 
 

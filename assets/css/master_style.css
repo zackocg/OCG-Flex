@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 body {
-  background: none;
+  background: #ffffff url('../images/background_textures/gplaypattern.png');
   margin: 0;
   padding: 0;
 }
@@ -42,25 +42,25 @@ h6 {
 }
 #primary-content-border {
   padding: 0px;
-  background: none;
+  background: white;
   margin: 0px auto;
-  -webkit-box-shadow: ;
-  box-shadow: ;
-  -webkit-border-top-left-radius: ;
-  -webkit-border-top-right-radius: ;
-  -webkit-border-bottom-right-radius: ;
-  -webkit-border-bottom-left-radius: ;
-  -moz-border-radius-topleft: ;
-  -moz-border-radius-topright: ;
-  -moz-border-radius-bottomright: ;
-  -moz-border-radius-bottomleft: ;
-  border-top-left-radius: ;
-  border-top-right-radius: ;
-  border-bottom-right-radius: ;
-  border-bottom-left-radius: ;
+  -webkit-box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.3);
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 #primary-content-wrapper {
-  background: none;
+  background: #ffffff;
   padding: 0px;
   -webkit-box-shadow: ;
   box-shadow: ;
@@ -100,6 +100,7 @@ h6 {
 header {
   background: none;
   padding: 20px 0;
+  padding: null;
 }
 .masthead-branding-logo {
   background-image: url('http://zack.dev/ocgflex/wp-content/themes/ocgflex/assets/images/ocg_flex_logo.png');
@@ -1260,6 +1261,8 @@ footer {
   background: -ms-linear-gradient(top,#444444 0%,#000000 100%);
   background: linear-gradient(to bottom,#444444 0%,#000000 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@navGradientColorTop',endColorstr='@navGradientColorBottom',GradientType=0);
+  position: none;
+  z-index: 20000;
 }
 #megaMenu ul.megaMenu > li > a,
 #megaMenu ul.megaMenu > li > span.um-anchoremulator {
