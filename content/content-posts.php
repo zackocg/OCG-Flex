@@ -8,7 +8,8 @@ Index - Blog Posts
 	<div id="contentContainer">
 		<div class="col_7">
 		<?php
-		//Located in /ocgflex-core/functions/post_loop.php
+		//Function Located in /ocgflex-core/functions/post_loop.php
+		//Template Located in /partials/partial-single-post.php
 		post_loop();
 		?>
 		</div>

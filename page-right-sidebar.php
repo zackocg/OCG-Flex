@@ -8,7 +8,7 @@ Template Name: Right Side Bar
 get_header();
 
 //Show Body Content
-//get_template_part('content/content', 'right-sidebar');
+get_template_part('content/content', 'right-sidebar');
 
 
 //Show Footer

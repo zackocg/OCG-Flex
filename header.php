@@ -15,20 +15,23 @@ less.watch();
 
 </head>
 <body <?php body_class(); ?>>
+
 <?php showNavigationTopFixed(); ?>
+
+<div class="cleafix"></div>
+
 <div id="primary-content-border" class="<?php boxedLayout(); ?>">
 <div id="primary-content-wrapper" class="<?php boxedLayout(); ?>">
 
+
+
+<header>
 <?php
 
 showNavigationTop();
 
 ?>
-
 <?php
-
-
-
 global $mastHeadLayout;
 switch ($mastHeadLayout) {
     case 0:
@@ -60,10 +63,12 @@ switch ($mastHeadLayout) {
         break;
 }
 ?>
-
 <?php
 	showNavigationBottom();
 ?>
+</header>
+
+
 
 
 

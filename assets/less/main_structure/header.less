@@ -2,6 +2,7 @@ header {
 	background: @mastHeadBackground;
 	padding: @mastHeadPadding;
 	padding: @stickyNavPrimaryContainerMarginTop; //Sticky Header Padding Override
+	box-shadow: 0px 7px 20px rgba(0,0,0,.2);
 }
 
 .masthead-branding-logo {
@@ -37,8 +38,9 @@ header {
 	text-indent: -9999px;
 }
 
-nav {
-	
+.fixed_navigation {
+	//margin-top: -@primaryContainerMarginTop;
+	margin-bottom: @primaryContainerMarginTop;
 }
 
 /*--------------------------------

@@ -33,7 +33,7 @@ $maxGridWidth = '960px'; //Max Width of the Grid.
 $maxGridWidth1280 = '960px';
 
 //RESPONSIVE - Max Grid Width > 768px - 1024px
-$maxGridWidth1024 = '768px';
+$maxGridWidth1024 = '960px';
 
 //RESPONSIVE - Max Grid Width > 480px - 768px
 $maxGridWidth768 = '700px';
@@ -45,10 +45,11 @@ $maxGridWidth480 = '100%';
 /* ------- B O X E D   L A Y O U T ----------------*/
 
 //Set if site requires boxed layout look, this will put everthing into a grid.
-$boxedLayout = true;
+$boxedLayout = false;
 
 //This will only show when Boxed Layout Is Turned On (true)
-$bodyBackground = '#ffffff url(\'../images/background_textures/gplaypattern.png\')';
+//EX: #ffffff url(\'../images/background_textures/escheresque_ste.png\') fixed
+$bodyBackground = 'none';
 
 /* ------- G R I D   S E T T I N G S ----------------*/
 
@@ -68,7 +69,7 @@ $GridFlexPadding = '0px';
 $primaryContainerBorderSize = '0px'; 
 
 //Primary Container Border Color (HEX, RGB, RGBA, and URL for images)
-$primaryContainerBorderColor = 'white';
+$primaryContainerBorderColor = 'rgba(255,255,255,.5)';
 
 //Set Corner Radius for Boxed Layout Primary Container
 $primaryContainerBorder_RoundedCorners_topLeft = '5px'; 
@@ -77,26 +78,30 @@ $primaryContainerBorder_RoundedCorners_bottomLeft = '5px';
 $primaryContainerBorder_RoundedCorners_bottomRight = '5px';
 
 // Primary Container Background ( #ffffff url(\'../images/background_textures/retina_wood.png\') )
-$primaryContainerBackground = '#efefef';
+$primaryContainerBackground = '#FFFFFF';
 
 
 //Boxed Layout Shadow ( 2px 2px 10px 1px rgba(0, 0, 0, .3) )
 $primaryContainerBoxShadow = '2px 2px 10px 1px rgba(0, 0, 0, .3)';
 
 //Set Corner Radius for Boxed Layout Primary Container
-$primaryContainer_RoundedCorners_topLeft = '0'; 
-$primaryContainer_RoundedCorners_topRight = '0';
-$primaryContainer_RoundedCorners_bottomLeft = '0';
-$primaryContainer_RoundedCorners_bottomRight = '0';
+$primaryContainer_RoundedCorners_topLeft = '5px'; 
+$primaryContainer_RoundedCorners_topRight = '5px';
+$primaryContainer_RoundedCorners_bottomLeft = '5px';
+$primaryContainer_RoundedCorners_bottomRight = '5px';
 
 //Inner Padding of Main Container
 $primaryContainerPadding = '0px';
 
 //Set Body Content Container Margin
-$primaryContainerMargin = '0px auto'; // (top, right, bottom, left) for center page (0 auto)
+$primaryContainerMarginTop = '0px';
+$primaryContainerMarginBottom = '0px';
+$primaryContainerMarginLeft = 'auto'; //set to auto for centering
+$primaryContainerMarginRight = 'auto'; //set to auto for centering
+
 
 //Set Body Content Container Margin for Mobile (Max Width 480px)
-$primaryContainerMarginMobile = '0px 15px';
+$primaryContainerMarginMobile = '15px 15px';
 
 
 /* ------- T Y P O G R A P H Y ----------------*/
@@ -142,7 +147,7 @@ $mastHeadLayout = '3';
 $mastHeadBackground = '#ffffff'; 
 
 //Masthead Padding
-$mastHeadPadding = '20px 0';
+$mastHeadPadding = '20px 0 0 0';
 
 //Show Logo
 $showMastHeadBrandLogo = true; //true or false
@@ -167,7 +172,7 @@ Navigation Above or Below Mast Head Container
 $navPositionAroundMasthead = '1';
 
 
-$navInGrid = true; //Set if you want the navigation inside a grid that is centered.
+$navInGrid = false; //Set if you want the navigation inside a grid that is centered.
 
 $stickyNav = false; //Fix Header to Top of Page
 $stickyNavPrimaryContainerMarginTop = "null"; //When Menu is Fixed, Push Primary Content Container Down So It Doesn't 
@@ -218,7 +223,8 @@ Footer Layouts
 
 $footerLayout = '9';
 
-$footerBackgroundColor = '#999999'; //Masthead Background Color
+//Footer Background
+$footerBackground = '#999999';
 
 $footerPadding = '20px 0';
 

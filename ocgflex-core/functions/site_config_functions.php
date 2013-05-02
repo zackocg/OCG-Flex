@@ -4,6 +4,26 @@ require_once 'masthead_layouts.php';
 require_once 'footer_layouts.php';
 
 
+function showNavigationTopFixed() {
+	global $navPositionAroundMasthead;
+	if ($navPositionAroundMasthead == '2') {
+		echo '<div class="fixed_navigation">';
+		useKickstartNav();
+		useUberMenu();
+		echo '<span style="text-indent:-9999px;">.</span>';
+		echo '</div>';
+	} else {
+		
+	}
+}
+
+global $stickyNav;
+if ($stickyNav == true) {
+	$stickyNavFixed = "fixed";
+} elseif ($stickyNav == false) {
+	$stickyNavFixed = "none";
+}
+
 function showNavigationTop() {
 	global $navPositionAroundMasthead;
 	if ($navPositionAroundMasthead == '0') {
@@ -22,24 +42,6 @@ function showNavigationBottom() {
 	} else {
 		
 	}
-}
-
-function showNavigationTopFixed() {
-	global $navPositionAroundMasthead;
-	if ($navPositionAroundMasthead == '2') {
-		useKickstartNav();
-		useUberMenu();
-	} else {
-		
-	}
-}
-
-
-global $stickyNav;
-if ($stickyNav == true) {
-	$stickyNavFixed = "fixed";
-} elseif ($stickyNav == false) {
-	$stickyNavFixed = "none";
 }
 
 

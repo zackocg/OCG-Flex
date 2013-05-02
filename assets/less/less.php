@@ -28,7 +28,10 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   global $primaryContainerBorder_RoundedCorners_bottomLeft;
   global $primaryContainerBorder_RoundedCorners_bottomRight;
   global $primaryContainerBackground;
-  global $primaryContainerMargin;
+  global $primaryContainerMarginTop;
+  global $primaryContainerMarginBottom;
+  global $primaryContainerMarginLeft;
+  global $primaryContainerMarginRight;
   global $primaryContainerMarginMobile;
   global $primaryContainerPadding;
   global $primaryContainerBoxShadow;
@@ -58,7 +61,7 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   
   global $mastHeadBackground;
   
-  global $footerBackgroundColor;
+  global $footerBackground;
   global $footerPadding;
   
   //Render Image URLs Correctly
@@ -89,7 +92,10 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   "primaryContainerBorder_RoundedCorners_bottomRight" => $primaryContainerBorder_RoundedCorners_bottomRight,
   "primaryContainerBackground" => $primaryContainerBackground,
   "primaryContainerPadding" => $primaryContainerPadding,
-  "primaryContainerMargin" => $primaryContainerMargin,
+  "primaryContainerMarginTop" => $primaryContainerMarginTop,
+  "primaryContainerMarginBottom" => $primaryContainerMarginBottom,
+  "primaryContainerMarginLeft" => $primaryContainerMarginLeft,
+  "primaryContainerMarginRight" => $primaryContainerMarginRight,
   "primaryContainerMarginMobile" => $primaryContainerMarginMobile,
   "primaryContainerBoxShadow" => $primaryContainerBoxShadow,
   "primaryContainer_RoundedCorners_topLeft" => $primaryContainer_RoundedCorners_topLeft,
@@ -120,7 +126,7 @@ function ocgflex_phpless( $inputFile, $outputFile ) {
   "navGradientColorBottom" => $navGradientColorBottom,
   
   //Footer  
-  "footerBackgroundColor" => $footerBackgroundColor,
+  "footerBackground" => $footerBackground,
   "footerPadding" => $footerPadding,
   
   ));
