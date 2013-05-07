@@ -20,7 +20,7 @@ $woocommerce->show_messages();
 
 <?php do_action( 'woocommerce_before_cart_table' ); ?>
 
-<table class="shop_table cart" cellspacing="0">
+<table data-compression="50" data-min="7" data-max="20" class="responsive">
 	<thead>
 		<tr>
 			<th class="product-remove">&nbsp;</th>
