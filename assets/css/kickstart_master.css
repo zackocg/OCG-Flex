@@ -800,7 +800,7 @@ input.error {
   .grid *[class*="col_"] [class*="col_"] {
     margin-left: 0;
     margin-right: 0;
-    width: 100%;
+    max-width: 700px;
   }
   .grid {
     max-width: 700px;
